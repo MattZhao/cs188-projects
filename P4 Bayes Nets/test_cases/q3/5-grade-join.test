@@ -1,0 +1,225 @@
+class: "FactorInputFactorEqualityTest"
+max_points: "4"
+alg: "joinFactors"
+factorArgs: "A B"
+seed: "cs188"
+constructRandomly: "False"
+
+
+variableDomainsDict: """
+L : 0 1 2
+M : l m n o
+N : -10.5 1.34
+O : help! me! I'mTrapped InaBayesNet
+Q : singleEntryForThisVariable
+"""
+
+# endOfNonFactors
+
+AunconditionedVariables: "M L O"
+
+AconditionedVariables: "Q N"
+
+AFactorTable: """
+L : 0, M : l, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0447769827421
+L : 1, M : l, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0335548259369
+L : 2, M : l, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0135133823856
+L : 0, M : m, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0299407113048
+L : 1, M : m, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0190137493524
+L : 2, M : m, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0459168029028
+L : 0, M : n, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 1, M : n, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0481229169727
+L : 2, M : n, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0264097152778
+L : 0, M : o, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0484229139817
+L : 1, M : o, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.00296557788646
+L : 2, M : o, O : help!, N : -10.5, Q : singleEntryForThisVariable = 0.0490236571006
+L : 0, M : l, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0181539164706
+L : 1, M : l, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0107669094141
+L : 2, M : l, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 0, M : m, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.00217909337527
+L : 1, M : m, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 2, M : m, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0403565271376
+L : 0, M : n, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.00678551130624
+L : 1, M : n, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0305996504641
+L : 2, M : n, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0489301511809
+L : 0, M : o, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 1, M : o, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 2, M : o, O : me!, N : -10.5, Q : singleEntryForThisVariable = 0.0045288246707
+L : 0, M : l, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.00654528636072
+L : 1, M : l, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0437076697087
+L : 2, M : l, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 0, M : m, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0110752062624
+L : 1, M : m, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0396237693127
+L : 2, M : m, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0123021915473
+L : 0, M : n, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0332297127389
+L : 1, M : n, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0299842528698
+L : 2, M : n, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 0, M : o, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0189507724124
+L : 1, M : o, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 2, M : o, O : I'mTrapped, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 0, M : l, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0
+L : 1, M : l, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.039840143279
+L : 2, M : l, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0351210471164
+L : 0, M : m, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0115769730372
+L : 1, M : m, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0347270528183
+L : 2, M : m, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0382716139813
+L : 0, M : n, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0090690152544
+L : 1, M : n, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.00799625915824
+L : 2, M : n, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0295772931739
+L : 0, M : o, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0146774518464
+L : 1, M : o, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.013443479893
+L : 2, M : o, O : InaBayesNet, N : -10.5, Q : singleEntryForThisVariable = 0.0463189893654
+L : 0, M : l, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.00746874052442
+L : 1, M : l, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.0170706440325
+L : 2, M : l, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.0125889576289
+L : 0, M : m, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.024671121071
+L : 1, M : m, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.00626546229009
+L : 2, M : m, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 0, M : n, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.0246502130155
+L : 1, M : n, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.0434087985544
+L : 2, M : n, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.0128190936074
+L : 0, M : o, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.0242600514229
+L : 1, M : o, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.0038706658879
+L : 2, M : o, O : help!, N : 1.34, Q : singleEntryForThisVariable = 0.000564853924528
+L : 0, M : l, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0411575250006
+L : 1, M : l, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 2, M : l, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0293529082434
+L : 0, M : m, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0165362781706
+L : 1, M : m, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.026525369977
+L : 2, M : m, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0177402756729
+L : 0, M : n, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0488609903771
+L : 1, M : n, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0072654289765
+L : 2, M : n, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.025527974888
+L : 0, M : o, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0391811589986
+L : 1, M : o, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 2, M : o, O : me!, N : 1.34, Q : singleEntryForThisVariable = 0.0494160410886
+L : 0, M : l, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0552756677955
+L : 1, M : l, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 2, M : l, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0321280167988
+L : 0, M : m, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 1, M : m, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.005603470804
+L : 2, M : m, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0479437369214
+L : 0, M : n, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 1, M : n, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 2, M : n, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0302095703475
+L : 0, M : o, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0227207214722
+L : 1, M : o, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0161232920219
+L : 2, M : o, O : I'mTrapped, N : 1.34, Q : singleEntryForThisVariable = 0.0151621127433
+L : 0, M : l, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 1, M : l, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0101119740519
+L : 2, M : l, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0543868524166
+L : 0, M : m, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 1, M : m, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0379246424001
+L : 2, M : m, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.00980121226356
+L : 0, M : n, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 1, M : n, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0484577738418
+L : 2, M : n, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0489563519456
+L : 0, M : o, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0411582588411
+L : 1, M : o, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.0
+L : 2, M : o, O : InaBayesNet, N : 1.34, Q : singleEntryForThisVariable = 0.044833791982
+"""
+
+
+BunconditionedVariables: "N"
+
+BconditionedVariables: "Q M L O"
+
+BFactorTable: """
+N : -10.5, L : 0, M : l, O : help!, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 0, M : l, O : help!, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 1, M : l, O : help!, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 1, M : l, O : help!, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 2, M : l, O : help!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 2, M : l, O : help!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 0, M : m, O : help!, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 0, M : m, O : help!, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 1, M : m, O : help!, Q : singleEntryForThisVariable = 0.33639251888
+N : 1.34, L : 1, M : m, O : help!, Q : singleEntryForThisVariable = 0.66360748112
+N : -10.5, L : 2, M : m, O : help!, Q : singleEntryForThisVariable = 0.670537410876
+N : 1.34, L : 2, M : m, O : help!, Q : singleEntryForThisVariable = 0.329462589124
+N : -10.5, L : 0, M : n, O : help!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 0, M : n, O : help!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 1, M : n, O : help!, Q : singleEntryForThisVariable = 0.366925835005
+N : 1.34, L : 1, M : n, O : help!, Q : singleEntryForThisVariable = 0.633074164995
+N : -10.5, L : 2, M : n, O : help!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 2, M : n, O : help!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 0, M : o, O : help!, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 0, M : o, O : help!, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 1, M : o, O : help!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 1, M : o, O : help!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 2, M : o, O : help!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 2, M : o, O : help!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 0, M : l, O : me!, Q : singleEntryForThisVariable = 0.425011877712
+N : 1.34, L : 0, M : l, O : me!, Q : singleEntryForThisVariable = 0.574988122288
+N : -10.5, L : 1, M : l, O : me!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 1, M : l, O : me!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 2, M : l, O : me!, Q : singleEntryForThisVariable = 0.903659235677
+N : 1.34, L : 2, M : l, O : me!, Q : singleEntryForThisVariable = 0.0963407643231
+N : -10.5, L : 0, M : m, O : me!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 0, M : m, O : me!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 1, M : m, O : me!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 1, M : m, O : me!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 2, M : m, O : me!, Q : singleEntryForThisVariable = 0.799575956912
+N : 1.34, L : 2, M : m, O : me!, Q : singleEntryForThisVariable = 0.200424043088
+N : -10.5, L : 0, M : n, O : me!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 0, M : n, O : me!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 1, M : n, O : me!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 1, M : n, O : me!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 2, M : n, O : me!, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 2, M : n, O : me!, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 0, M : o, O : me!, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 0, M : o, O : me!, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 1, M : o, O : me!, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 1, M : o, O : me!, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 2, M : o, O : me!, Q : singleEntryForThisVariable = 0.0116704731665
+N : 1.34, L : 2, M : o, O : me!, Q : singleEntryForThisVariable = 0.988329526833
+N : -10.5, L : 0, M : l, O : I'mTrapped, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 0, M : l, O : I'mTrapped, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 1, M : l, O : I'mTrapped, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 1, M : l, O : I'mTrapped, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 2, M : l, O : I'mTrapped, Q : singleEntryForThisVariable = 0.351415482985
+N : 1.34, L : 2, M : l, O : I'mTrapped, Q : singleEntryForThisVariable = 0.648584517015
+N : -10.5, L : 0, M : m, O : I'mTrapped, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 0, M : m, O : I'mTrapped, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 1, M : m, O : I'mTrapped, Q : singleEntryForThisVariable = 0.611182086641
+N : 1.34, L : 1, M : m, O : I'mTrapped, Q : singleEntryForThisVariable = 0.388817913359
+N : -10.5, L : 2, M : m, O : I'mTrapped, Q : singleEntryForThisVariable = 0.5574346385
+N : 1.34, L : 2, M : m, O : I'mTrapped, Q : singleEntryForThisVariable = 0.4425653615
+N : -10.5, L : 0, M : n, O : I'mTrapped, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 0, M : n, O : I'mTrapped, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 1, M : n, O : I'mTrapped, Q : singleEntryForThisVariable = 0.813240391404
+N : 1.34, L : 1, M : n, O : I'mTrapped, Q : singleEntryForThisVariable = 0.186759608596
+N : -10.5, L : 2, M : n, O : I'mTrapped, Q : singleEntryForThisVariable = 0.725512412417
+N : 1.34, L : 2, M : n, O : I'mTrapped, Q : singleEntryForThisVariable = 0.274487587583
+N : -10.5, L : 0, M : o, O : I'mTrapped, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 0, M : o, O : I'mTrapped, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 1, M : o, O : I'mTrapped, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 1, M : o, O : I'mTrapped, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 2, M : o, O : I'mTrapped, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 2, M : o, O : I'mTrapped, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 0, M : l, O : InaBayesNet, Q : singleEntryForThisVariable = 0.493094921153
+N : 1.34, L : 0, M : l, O : InaBayesNet, Q : singleEntryForThisVariable = 0.506905078847
+N : -10.5, L : 1, M : l, O : InaBayesNet, Q : singleEntryForThisVariable = 0.523625423199
+N : 1.34, L : 1, M : l, O : InaBayesNet, Q : singleEntryForThisVariable = 0.476374576801
+N : -10.5, L : 2, M : l, O : InaBayesNet, Q : singleEntryForThisVariable = 0.689328687923
+N : 1.34, L : 2, M : l, O : InaBayesNet, Q : singleEntryForThisVariable = 0.310671312077
+N : -10.5, L : 0, M : m, O : InaBayesNet, Q : singleEntryForThisVariable = 0.558218637529
+N : 1.34, L : 0, M : m, O : InaBayesNet, Q : singleEntryForThisVariable = 0.441781362471
+N : -10.5, L : 1, M : m, O : InaBayesNet, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 1, M : m, O : InaBayesNet, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 2, M : m, O : InaBayesNet, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 2, M : m, O : InaBayesNet, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 0, M : n, O : InaBayesNet, Q : singleEntryForThisVariable = 0.0
+N : 1.34, L : 0, M : n, O : InaBayesNet, Q : singleEntryForThisVariable = 1.0
+N : -10.5, L : 1, M : n, O : InaBayesNet, Q : singleEntryForThisVariable = 0.353605537659
+N : 1.34, L : 1, M : n, O : InaBayesNet, Q : singleEntryForThisVariable = 0.646394462341
+N : -10.5, L : 2, M : n, O : InaBayesNet, Q : singleEntryForThisVariable = 0.202713785549
+N : 1.34, L : 2, M : n, O : InaBayesNet, Q : singleEntryForThisVariable = 0.797286214451
+N : -10.5, L : 0, M : o, O : InaBayesNet, Q : singleEntryForThisVariable = 0.140922395709
+N : 1.34, L : 0, M : o, O : InaBayesNet, Q : singleEntryForThisVariable = 0.859077604291
+N : -10.5, L : 1, M : o, O : InaBayesNet, Q : singleEntryForThisVariable = 1.0
+N : 1.34, L : 1, M : o, O : InaBayesNet, Q : singleEntryForThisVariable = 0.0
+N : -10.5, L : 2, M : o, O : InaBayesNet, Q : singleEntryForThisVariable = 0.724336536883
+N : 1.34, L : 2, M : o, O : InaBayesNet, Q : singleEntryForThisVariable = 0.275663463117
+"""
+

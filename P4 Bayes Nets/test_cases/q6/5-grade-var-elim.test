@@ -1,0 +1,121 @@
+class: "BayesNetInputFactorEqualityTest"
+max_points: "4"
+alg: "inferenceByVariableElimination"
+seed: "cs188"
+constructRandomly: "False"
+
+variables: """
+A
+B
+C
+D
+E
+"""
+
+edges: """
+A B
+B C
+A C
+"""
+
+variableDomainsDict: """
+A : 0 1 2
+B : l m n o
+C : -10.5 1.34
+D : help! me! I'mTrapped InaBayesNet
+E : singleEntryForThisVariable
+"""
+
+queryVariables: "A"
+
+evidenceDict: """
+B : m
+"""
+
+variableEliminationOrder: "C D E"
+
+# endOfNonFactors
+
+AunconditionedVariables: "A"
+
+AconditionedVariables: ""
+
+AFactorTable: """
+A : 0 = 0.644493971172
+A : 1 = 0.261296965582
+A : 2 = 0.0942090632453
+"""
+
+
+CunconditionedVariables: "C"
+
+CconditionedVariables: "A B"
+
+CFactorTable: """
+C : -10.5, A : 0, B : l = 0.0
+C : 1.34, A : 0, B : l = 1.0
+C : -10.5, A : 1, B : l = 0.157744145568
+C : 1.34, A : 1, B : l = 0.842255854432
+C : -10.5, A : 2, B : l = 0.676933020022
+C : 1.34, A : 2, B : l = 0.323066979978
+C : -10.5, A : 0, B : m = 0.164406527303
+C : 1.34, A : 0, B : m = 0.835593472697
+C : -10.5, A : 1, B : m = 0.0
+C : 1.34, A : 1, B : m = 1.0
+C : -10.5, A : 2, B : m = 0.0
+C : 1.34, A : 2, B : m = 1.0
+C : -10.5, A : 0, B : n = 1.0
+C : 1.34, A : 0, B : n = 0.0
+C : -10.5, A : 1, B : n = 0.304307665342
+C : 1.34, A : 1, B : n = 0.695692334658
+C : -10.5, A : 2, B : n = 0.419155889929
+C : 1.34, A : 2, B : n = 0.580844110071
+C : -10.5, A : 0, B : o = 0.169573242888
+C : 1.34, A : 0, B : o = 0.830426757112
+C : -10.5, A : 1, B : o = 0.19765016247
+C : 1.34, A : 1, B : o = 0.80234983753
+C : -10.5, A : 2, B : o = 0.505078886969
+C : 1.34, A : 2, B : o = 0.494921113031
+"""
+
+
+BunconditionedVariables: "B"
+
+BconditionedVariables: "A"
+
+BFactorTable: """
+B : l, A : 0 = 0.729463421654
+B : m, A : 0 = 0.270536578346
+B : n, A : 0 = 0.0
+B : o, A : 0 = 0.0
+B : l, A : 1 = 0.498703437888
+B : m, A : 1 = 0.501296562112
+B : n, A : 1 = 0.0
+B : o, A : 1 = 0.0
+B : l, A : 2 = 0.262692210105
+B : m, A : 2 = 0.343440399016
+B : n, A : 2 = 0.301851629618
+B : o, A : 2 = 0.0920157612613
+"""
+
+
+EunconditionedVariables: "E"
+
+EconditionedVariables: ""
+
+EFactorTable: """
+E : singleEntryForThisVariable = 1.0
+"""
+
+
+DunconditionedVariables: "D"
+
+DconditionedVariables: ""
+
+DFactorTable: """
+D : help! = 0.251719693616
+D : me! = 0.466369384686
+D : I'mTrapped = 0.0
+D : InaBayesNet = 0.281910921698
+"""
+

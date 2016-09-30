@@ -1,0 +1,28 @@
+class: "MostLikelyFoodHousePositionTest"
+
+layoutName: "longBottomBoard"
+layout: """
+%%%%%%%%%%%
+%         %
+%         %
+%         %
+%         %
+%         %
+%         %
+%         %
+%         %
+%         %
+% RBR BBR %
+% R.B BGB %
+% B B R R %
+%P        %
+%%%%%%%%%%%
+"""
+
+evidence: """
+{'obs(2,11)': 'none', 'obs(2,10)': 'none', 'obs(7,4)': 'blue', 'obs(2,2)': 'blue', 'obs(6,4)': 'blue', 'obs(8,4)': 'red', 'obs(3,4)': 'blue', 'obs(4,10)': 'none', 'obs(2,3)': 'red', 'obs(2,4)': 'red', 'obs(4,4)': 'red'}
+"""
+
+eliminationOrder: """
+['obs(4,3)', 'obs(4,2)', 'obs(3,12)', 'obs(4,12)', 'obs(2,12)', 'obs(4,11)', 'obs(8,3)', 'obs(6,3)', 'obs(8,2)', 'obs(6,2)', 'obs(8,12)', 'obs(6,11)', 'obs(8,11)', 'obs(6,10)', 'obs(8,10)', 'obs(7,12)', 'obs(6,12)', 'xPos', 'yPos', 'ghostHouse']
+"""

@@ -1,0 +1,18 @@
+# This is the solution file for test_cases/q6/1-disconnected-eliminate.test.
+variableDomainsDict: """
+D : dry wet
+W : sun
+T : hot cold
+"""
+
+unconditionedVariables: "D"
+
+conditionedVariables: "W"
+
+FactorTable: """
+D : dry, W : sun = 0.9
+D : wet, W : sun = 0.1
+"""
+
+
+callTrackingList: "[('join', 'T')]"

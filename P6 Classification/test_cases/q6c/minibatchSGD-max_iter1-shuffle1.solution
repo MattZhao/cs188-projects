@@ -1,0 +1,4 @@
+# This is the solution file for test_cases/q6c/minibatchSGD-max_iter1-shuffle1.test.
+init_param_values_fname: "test_cases/q6c/minibatchSGD-max_iter1-shuffle1_init.npz"
+param_values_fname: "test_cases/q6c/minibatchSGD-max_iter1-shuffle1.npz"
+losses_fname: "test_cases/q6c/minibatchSGD-max_iter1-shuffle1_losses.npz"

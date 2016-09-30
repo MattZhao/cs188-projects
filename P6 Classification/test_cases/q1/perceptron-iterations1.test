@@ -1,0 +1,13 @@
+class: "ParamValuesEqualityTest"
+
+solver_module: "perceptron"
+solver_class: "PerceptronSolver"
+iterations: "1"
+
+model_module: "perceptron"
+model_class: "PerceptronModel"
+
+dataset: "medMnistDataset"
+
+max_points: "4"
+

@@ -1,0 +1,49 @@
+# This is the solution file for test_cases/q4/4-grade-eliminate.test.
+variableDomainsDict: """
+Q1 : myNameHasMoreThanOneLetter
+N1 : -10.5 1.34
+M1 : l m n o
+O1 : help! me! I'mTrapped InaBayesNet
+L1 : 0 1 2
+"""
+
+unconditionedVariables: "M1 O1"
+
+conditionedVariables: "Q1 N1"
+
+FactorTable: """
+M1 : l, O1 : help!, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0918451910646
+M1 : m, O1 : help!, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.09487126356
+M1 : n, O1 : help!, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0745326322505
+M1 : o, O1 : help!, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.100412148969
+M1 : l, O1 : me!, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0289208258847
+M1 : m, O1 : me!, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0425356205129
+M1 : n, O1 : me!, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0863153129512
+M1 : o, O1 : me!, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0045288246707
+M1 : l, O1 : I'mTrapped, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0502529560694
+M1 : m, O1 : I'mTrapped, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0630011671224
+M1 : n, O1 : I'mTrapped, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0632139656087
+M1 : o, O1 : I'mTrapped, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0189507724124
+M1 : l, O1 : InaBayesNet, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0749611903954
+M1 : m, O1 : InaBayesNet, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0845756398368
+M1 : n, O1 : InaBayesNet, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0466425675865
+M1 : o, O1 : InaBayesNet, Q1 : myNameHasMoreThanOneLetter, N1 : -10.5 = 0.0744399211048
+M1 : l, O1 : help!, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0371283421858
+M1 : m, O1 : help!, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0309365833611
+M1 : n, O1 : help!, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0808781051773
+M1 : o, O1 : help!, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0286955712353
+M1 : l, O1 : me!, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.070510433244
+M1 : m, O1 : me!, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0608019238205
+M1 : n, O1 : me!, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0816543942416
+M1 : o, O1 : me!, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0885972000872
+M1 : l, O1 : I'mTrapped, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0874036845943
+M1 : m, O1 : I'mTrapped, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0535472077254
+M1 : n, O1 : I'mTrapped, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0302095703475
+M1 : o, O1 : I'mTrapped, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0540061262374
+M1 : l, O1 : InaBayesNet, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0644988264685
+M1 : m, O1 : InaBayesNet, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0477258546637
+M1 : n, O1 : InaBayesNet, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0974141257874
+M1 : o, O1 : InaBayesNet, Q1 : myNameHasMoreThanOneLetter, N1 : 1.34 = 0.0859920508231
+"""
+
+

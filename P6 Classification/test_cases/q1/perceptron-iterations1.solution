@@ -1,0 +1,3 @@
+# This is the solution file for test_cases/q1/perceptron-iterations1.test.
+init_param_values_fname: "test_cases/q1/perceptron-iterations1_init.npz"
+param_values_fname: "test_cases/q1/perceptron-iterations1.npz"

@@ -1,0 +1,5 @@
+# This is the solution file for test_cases/q8/1-vpi-board-enter.test.
+
+answer: """
+(-317.45609366684414, 317.45609366684414)
+"""

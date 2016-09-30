@@ -1,0 +1,162 @@
+class: "FactorInputFactorEqualityTest"
+max_points: "4"
+alg: "joinFactors"
+factorArgs: "A B"
+seed: "cs188"
+constructRandomly: "False"
+
+
+variableDomainsDict: """
+L1 : 0 1 2
+M1 : l m n o
+N1 : -10.5 1.34
+O1 : help! me! I'mTrapped InaBayesNet
+Q1 : myNameHasMoreThanOneLetter
+"""
+
+# endO1fN1onFactors
+
+AunconditionedVariables: "L1 M1"
+
+AconditionedVariables: "O1"
+
+AFactorTable: """
+L1 : 0, M1 : l, O1 : help! = 0.258330124403
+L1 : 1, M1 : l, O1 : help! = 0.172735794206
+L1 : 2, M1 : l, O1 : help! = 0.0
+L1 : 0, M1 : m, O1 : help! = 0.104734692091
+L1 : 1, M1 : m, O1 : help! = 0.0125717596017
+L1 : 2, M1 : m, O1 : help! = 0.0391473894072
+L1 : 0, M1 : n, O1 : help! = 0.0377614688681
+L1 : 1, M1 : n, O1 : help! = 0.0638957615356
+L1 : 2, M1 : n, O1 : help! = 0.191710903684
+L1 : 0, M1 : o, O1 : help! = 0.0
+L1 : 1, M1 : o, O1 : help! = 0.0667905852913
+L1 : 2, M1 : o, O1 : help! = 0.0523215209113
+L1 : 0, M1 : l, O1 : me! = 0.159661284861
+L1 : 1, M1 : l, O1 : me! = 0.110637840267
+L1 : 2, M1 : l, O1 : me! = 0.062692626321
+L1 : 0, M1 : m, O1 : me! = 0.0
+L1 : 1, M1 : m, O1 : me! = 0.0355009323002
+L1 : 2, M1 : m, O1 : me! = 0.0
+L1 : 0, M1 : n, O1 : me! = 0.062484977125
+L1 : 1, M1 : n, O1 : me! = 0.144114059443
+L1 : 2, M1 : n, O1 : me! = 0.130648517392
+L1 : 0, M1 : o, O1 : me! = 0.048394873988
+L1 : 1, M1 : o, O1 : me! = 0.131361951232
+L1 : 2, M1 : o, O1 : me! = 0.11450293707
+L1 : 0, M1 : l, O1 : I'mTrapped = 0.264780335795
+L1 : 1, M1 : l, O1 : I'mTrapped = 0.0163171054042
+L1 : 2, M1 : l, O1 : I'mTrapped = 0.0743528894523
+L1 : 0, M1 : m, O1 : I'mTrapped = 0.168364393407
+L1 : 1, M1 : m, O1 : I'mTrapped = 0.0
+L1 : 2, M1 : m, O1 : I'mTrapped = 0.0
+L1 : 0, M1 : n, O1 : I'mTrapped = 0.164978372943
+L1 : 1, M1 : n, O1 : I'mTrapped = 0.0
+L1 : 2, M1 : n, O1 : I'mTrapped = 0.0
+L1 : 0, M1 : o, O1 : I'mTrapped = 0.0439967549395
+L1 : 1, M1 : o, O1 : I'mTrapped = 0.0739682742498
+L1 : 2, M1 : o, O1 : I'mTrapped = 0.193241873809
+L1 : 0, M1 : l, O1 : InaBayesNet = 0.134402798029
+L1 : 1, M1 : l, O1 : InaBayesNet = 0.0773037189897
+L1 : 2, M1 : l, O1 : InaBayesNet = 0.143496852294
+L1 : 0, M1 : m, O1 : InaBayesNet = 0.118127348229
+L1 : 1, M1 : m, O1 : InaBayesNet = 0.143223151678
+L1 : 2, M1 : m, O1 : InaBayesNet = 0.0132562954964
+L1 : 0, M1 : n, O1 : InaBayesNet = 0.036009670999
+L1 : 1, M1 : n, O1 : InaBayesNet = 0.0
+L1 : 2, M1 : n, O1 : InaBayesNet = 0.0
+L1 : 0, M1 : o, O1 : InaBayesNet = 0.112024611449
+L1 : 1, M1 : o, O1 : InaBayesNet = 0.0865755172268
+L1 : 2, M1 : o, O1 : InaBayesNet = 0.135580035609
+"""
+
+
+BunconditionedVariables: "Q1 N1"
+
+BconditionedVariables: "O1"
+
+BFactorTable: """
+Q1 : myNameHasMoreThanOneLetter, N1 : -10.5, O1 : help! = 0.15359477936
+Q1 : myNameHasMoreThanOneLetter, N1 : 1.34, O1 : help! = 0.84640522064
+Q1 : myNameHasMoreThanOneLetter, N1 : -10.5, O1 : me! = 1.0
+Q1 : myNameHasMoreThanOneLetter, N1 : 1.34, O1 : me! = 0.0
+Q1 : myNameHasMoreThanOneLetter, N1 : -10.5, O1 : I'mTrapped = 0.59870609466
+Q1 : myNameHasMoreThanOneLetter, N1 : 1.34, O1 : I'mTrapped = 0.40129390534
+Q1 : myNameHasMoreThanOneLetter, N1 : -10.5, O1 : InaBayesNet = 1.0
+Q1 : myNameHasMoreThanOneLetter, N1 : 1.34, O1 : InaBayesNet = 0.0
+"""
+
+
+
+AunconditionedVariables: "M1 L1"
+
+AconditionedVariables: "O1"
+
+AFactorTable: """
+L1 : 0, M1 : l, O1 : help! = 0.258330124403
+L1 : 1, M1 : l, O1 : help! = 0.172735794206
+L1 : 2, M1 : l, O1 : help! = 0.0
+L1 : 0, M1 : m, O1 : help! = 0.104734692091
+L1 : 1, M1 : m, O1 : help! = 0.0125717596017
+L1 : 2, M1 : m, O1 : help! = 0.0391473894072
+L1 : 0, M1 : n, O1 : help! = 0.0377614688681
+L1 : 1, M1 : n, O1 : help! = 0.0638957615356
+L1 : 2, M1 : n, O1 : help! = 0.191710903684
+L1 : 0, M1 : o, O1 : help! = 0.0
+L1 : 1, M1 : o, O1 : help! = 0.0667905852913
+L1 : 2, M1 : o, O1 : help! = 0.0523215209113
+L1 : 0, M1 : l, O1 : me! = 0.159661284861
+L1 : 1, M1 : l, O1 : me! = 0.110637840267
+L1 : 2, M1 : l, O1 : me! = 0.062692626321
+L1 : 0, M1 : m, O1 : me! = 0.0
+L1 : 1, M1 : m, O1 : me! = 0.0355009323002
+L1 : 2, M1 : m, O1 : me! = 0.0
+L1 : 0, M1 : n, O1 : me! = 0.062484977125
+L1 : 1, M1 : n, O1 : me! = 0.144114059443
+L1 : 2, M1 : n, O1 : me! = 0.130648517392
+L1 : 0, M1 : o, O1 : me! = 0.048394873988
+L1 : 1, M1 : o, O1 : me! = 0.131361951232
+L1 : 2, M1 : o, O1 : me! = 0.11450293707
+L1 : 0, M1 : l, O1 : I'mTrapped = 0.264780335795
+L1 : 1, M1 : l, O1 : I'mTrapped = 0.0163171054042
+L1 : 2, M1 : l, O1 : I'mTrapped = 0.0743528894523
+L1 : 0, M1 : m, O1 : I'mTrapped = 0.168364393407
+L1 : 1, M1 : m, O1 : I'mTrapped = 0.0
+L1 : 2, M1 : m, O1 : I'mTrapped = 0.0
+L1 : 0, M1 : n, O1 : I'mTrapped = 0.164978372943
+L1 : 1, M1 : n, O1 : I'mTrapped = 0.0
+L1 : 2, M1 : n, O1 : I'mTrapped = 0.0
+L1 : 0, M1 : o, O1 : I'mTrapped = 0.0439967549395
+L1 : 1, M1 : o, O1 : I'mTrapped = 0.0739682742498
+L1 : 2, M1 : o, O1 : I'mTrapped = 0.193241873809
+L1 : 0, M1 : l, O1 : InaBayesNet = 0.134402798029
+L1 : 1, M1 : l, O1 : InaBayesNet = 0.0773037189897
+L1 : 2, M1 : l, O1 : InaBayesNet = 0.143496852294
+L1 : 0, M1 : m, O1 : InaBayesNet = 0.118127348229
+L1 : 1, M1 : m, O1 : InaBayesNet = 0.143223151678
+L1 : 2, M1 : m, O1 : InaBayesNet = 0.0132562954964
+L1 : 0, M1 : n, O1 : InaBayesNet = 0.036009670999
+L1 : 1, M1 : n, O1 : InaBayesNet = 0.0
+L1 : 2, M1 : n, O1 : InaBayesNet = 0.0
+L1 : 0, M1 : o, O1 : InaBayesNet = 0.112024611449
+L1 : 1, M1 : o, O1 : InaBayesNet = 0.0865755172268
+L1 : 2, M1 : o, O1 : InaBayesNet = 0.135580035609
+"""
+
+
+BunconditionedVariables: "Q1 N1"
+
+BconditionedVariables: "O1"
+
+BFactorTable: """
+Q1 : myNameHasMoreThanOneLetter, N1 : -10.5, O1 : help! = 0.15359477936
+Q1 : myNameHasMoreThanOneLetter, N1 : 1.34, O1 : help! = 0.84640522064
+Q1 : myNameHasMoreThanOneLetter, N1 : -10.5, O1 : me! = 1.0
+Q1 : myNameHasMoreThanOneLetter, N1 : 1.34, O1 : me! = 0.0
+Q1 : myNameHasMoreThanOneLetter, N1 : -10.5, O1 : I'mTrapped = 0.59870609466
+Q1 : myNameHasMoreThanOneLetter, N1 : 1.34, O1 : I'mTrapped = 0.40129390534
+Q1 : myNameHasMoreThanOneLetter, N1 : -10.5, O1 : InaBayesNet = 1.0
+Q1 : myNameHasMoreThanOneLetter, N1 : 1.34, O1 : InaBayesNet = 0.0
+"""
+

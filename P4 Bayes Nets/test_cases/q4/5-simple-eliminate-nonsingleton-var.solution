@@ -1,0 +1,16 @@
+# This is the solution file for test_cases/q4/5-simple-eliminate-nonsingleton-var.test.
+variableDomainsDict: """
+D0 : wet dry
+W0 : sun rain
+"""
+
+unconditionedVariables: "D0"
+
+conditionedVariables: ""
+
+FactorTable: """
+D0 : wet = 0.22
+D0 : dry = 0.78
+"""
+
+

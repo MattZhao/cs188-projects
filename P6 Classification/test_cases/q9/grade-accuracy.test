@@ -1,0 +1,22 @@
+class: "GradeClassifierTest"
+solver_module: "solvers"
+solver_class: "MinibatchStochasticGradientDescentSolver"
+iterations: "1000"
+learning_rate: "0.01"
+momentum: "0.9"
+shuffle: "True"
+batch_size: "32"
+
+model_module: "models"
+model_class: "SoftmaxRegressionModel"
+init_param_values_fname_or_function: ""
+
+dataset: "largeMnistDataset"
+feature_extractor: "enhancedFeatureExtractor"
+
+# our test accuracy using basicFeatureExtractor: 87.0%
+# our test accuracy using enhancedFeatureExtractor: 89.1%
+accuracy_threshold: "88.0"
+
+max_points: "4"
+

@@ -1,0 +1,17 @@
+class: "BayesNetEqualityTest"
+
+layoutName: "smallBoard"
+layout: """
+%%%%%%%%%%%%%%%
+%             %
+% RBB         %
+% BGB         %
+% B R         %
+%             %
+%         RBR %
+%         B.R %
+%         B R %
+%P            %
+%%%%%%%%%%%%%%%
+"""
+

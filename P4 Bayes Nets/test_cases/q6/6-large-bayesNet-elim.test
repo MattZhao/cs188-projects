@@ -1,0 +1,366 @@
+class: "BayesNetInputFactorEqualityTest"
+max_points: "4"
+alg: "inferenceByVariableElimination"
+seed: "cs188"
+constructRandomly: "False"
+
+variables: """
+Z
+X1
+X2
+X3
+X4
+X5
+X6
+X7
+X8
+X9
+X10
+Y1
+Y2
+Y3
+Y4
+Y5
+Y6
+Y7
+Y8
+Y9
+Y10
+"""
+
+edges: """
+Z X1
+Z X2
+Z X3
+Z X4
+Z X5
+Z X6
+Z X7
+Z X8
+Z X9
+Z X10
+X1 Y1
+X2 Y2
+X3 Y3
+X4 Y4
+X5 Y5
+X6 Y6
+X7 Y7
+X8 Y8
+X9 Y9
+X10 Y10
+"""
+
+variableDomainsDict: """
+Z : evil good indifferent
+X1 : 0 1
+X2 : 0 1
+X3 : 0 1
+X4 : 0 1
+X5 : 0 1
+X6 : 0 1
+X7 : 0 1
+X8 : 0 1
+X9 : 0 1
+X10 : 0 1
+Y1 : water ice
+Y2 : water ice
+Y3 : water ice
+Y4 : water ice
+Y5 : water ice
+Y6 : water ice
+Y7 : water ice
+Y8 : water ice
+Y9 : water ice
+Y10 : water ice
+"""
+
+queryVariables: "X1 X2"
+
+variableEliminationOrder: "X3 X4 X5 X6 X7 X8 X9 X10 Z"
+
+evidenceDict: """
+Y1 : water
+Y2 : ice
+Y3 : water
+Y4 : ice
+Y5 : water
+Y6 : ice
+Y7 : water
+Y8 : ice
+Y9 : water
+Y10 : ice
+"""
+
+# endOfNonFactors
+
+X5unconditionedVariables: "X5"
+
+X5conditionedVariables: "Z"
+
+X5FactorTable: """
+X5 : 0, Z : evil = 0.581416503411
+X5 : 1, Z : evil = 0.418583496589
+X5 : 0, Z : good = 1.0
+X5 : 1, Z : good = 0.0
+X5 : 0, Z : indifferent = 0.0
+X5 : 1, Z : indifferent = 1.0
+"""
+
+
+X2unconditionedVariables: "X2"
+
+X2conditionedVariables: "Z"
+
+X2FactorTable: """
+X2 : 0, Z : evil = 1.0
+X2 : 1, Z : evil = 0.0
+X2 : 0, Z : good = 0.0
+X2 : 1, Z : good = 1.0
+X2 : 0, Z : indifferent = 0.63295587631
+X2 : 1, Z : indifferent = 0.36704412369
+"""
+
+
+X10unconditionedVariables: "X10"
+
+X10conditionedVariables: "Z"
+
+X10FactorTable: """
+X10 : 0, Z : evil = 0.932157327948
+X10 : 1, Z : evil = 0.0678426720516
+X10 : 0, Z : good = 0.488924536396
+X10 : 1, Z : good = 0.511075463604
+X10 : 0, Z : indifferent = 0.0
+X10 : 1, Z : indifferent = 1.0
+"""
+
+
+ZunconditionedVariables: "Z"
+
+ZconditionedVariables: ""
+
+ZFactorTable: """
+Z : evil = 0.366282091192
+Z : good = 0.0999652900561
+Z : indifferent = 0.533752618752
+"""
+
+
+Y10unconditionedVariables: "Y10"
+
+Y10conditionedVariables: "X10"
+
+Y10FactorTable: """
+Y10 : water, X10 : 0 = 0.0
+Y10 : ice, X10 : 0 = 1.0
+Y10 : water, X10 : 1 = 0.304307665342
+Y10 : ice, X10 : 1 = 0.695692334658
+"""
+
+
+X1unconditionedVariables: "X1"
+
+X1conditionedVariables: "Z"
+
+X1FactorTable: """
+X1 : 0, Z : evil = 1.0
+X1 : 1, Z : evil = 0.0
+X1 : 0, Z : good = 0.926031314752
+X1 : 1, Z : good = 0.0739686852482
+X1 : 0, Z : indifferent = 0.0
+X1 : 1, Z : indifferent = 1.0
+"""
+
+
+X6unconditionedVariables: "X6"
+
+X6conditionedVariables: "Z"
+
+X6FactorTable: """
+X6 : 0, Z : evil = 0.0
+X6 : 1, Z : evil = 1.0
+X6 : 0, Z : good = 0.477431141825
+X6 : 1, Z : good = 0.522568858175
+X6 : 0, Z : indifferent = 1.0
+X6 : 1, Z : indifferent = 0.0
+"""
+
+
+X7unconditionedVariables: "X7"
+
+X7conditionedVariables: "Z"
+
+X7FactorTable: """
+X7 : 0, Z : evil = 0.27008513902
+X7 : 1, Z : evil = 0.72991486098
+X7 : 0, Z : good = 0.43329264951
+X7 : 1, Z : good = 0.56670735049
+X7 : 0, Z : indifferent = 0.458003214533
+X7 : 1, Z : indifferent = 0.541996785467
+"""
+
+
+Y9unconditionedVariables: "Y9"
+
+Y9conditionedVariables: "X9"
+
+Y9FactorTable: """
+Y9 : water, X9 : 0 = 1.0
+Y9 : ice, X9 : 0 = 0.0
+Y9 : water, X9 : 1 = 0.498703437888
+Y9 : ice, X9 : 1 = 0.501296562112
+"""
+
+
+Y8unconditionedVariables: "Y8"
+
+Y8conditionedVariables: "X8"
+
+Y8FactorTable: """
+Y8 : water, X8 : 0 = 1.0
+Y8 : ice, X8 : 0 = 0.0
+Y8 : water, X8 : 1 = 0.433390657675
+Y8 : ice, X8 : 1 = 0.566609342325
+"""
+
+
+X8unconditionedVariables: "X8"
+
+X8conditionedVariables: "Z"
+
+X8FactorTable: """
+X8 : 0, Z : evil = 0.766378828529
+X8 : 1, Z : evil = 0.233621171471
+X8 : 0, Z : good = 0.591694920615
+X8 : 1, Z : good = 0.408305079385
+X8 : 0, Z : indifferent = 1.0
+X8 : 1, Z : indifferent = 0.0
+"""
+
+
+X9unconditionedVariables: "X9"
+
+X9conditionedVariables: "Z"
+
+X9FactorTable: """
+X9 : 0, Z : evil = 0.37629689044
+X9 : 1, Z : evil = 0.62370310956
+X9 : 0, Z : good = 1.0
+X9 : 1, Z : good = 0.0
+X9 : 0, Z : indifferent = 0.878806274155
+X9 : 1, Z : indifferent = 0.121193725845
+"""
+
+
+X4unconditionedVariables: "X4"
+
+X4conditionedVariables: "Z"
+
+X4FactorTable: """
+X4 : 0, Z : evil = 0.988593696082
+X4 : 1, Z : evil = 0.0114063039177
+X4 : 0, Z : good = 0.765212973063
+X4 : 1, Z : good = 0.234787026937
+X4 : 0, Z : indifferent = 1.0
+X4 : 1, Z : indifferent = 0.0
+"""
+
+
+Y1unconditionedVariables: "Y1"
+
+Y1conditionedVariables: "X1"
+
+Y1FactorTable: """
+Y1 : water, X1 : 0 = 0.711526186695
+Y1 : ice, X1 : 0 = 0.288473813305
+Y1 : water, X1 : 1 = 1.0
+Y1 : ice, X1 : 1 = 0.0
+"""
+
+
+X3unconditionedVariables: "X3"
+
+X3conditionedVariables: "Z"
+
+X3FactorTable: """
+X3 : 0, Z : evil = 0.706835554337
+X3 : 1, Z : evil = 0.293164445663
+X3 : 0, Z : good = 1.0
+X3 : 1, Z : good = 0.0
+X3 : 0, Z : indifferent = 0.617433268597
+X3 : 1, Z : indifferent = 0.382566731403
+"""
+
+
+Y3unconditionedVariables: "Y3"
+
+Y3conditionedVariables: "X3"
+
+Y3FactorTable: """
+Y3 : water, X3 : 0 = 0.825593744817
+Y3 : ice, X3 : 0 = 0.174406255183
+Y3 : water, X3 : 1 = 0.466285969892
+Y3 : ice, X3 : 1 = 0.533714030108
+"""
+
+
+Y2unconditionedVariables: "Y2"
+
+Y2conditionedVariables: "X2"
+
+Y2FactorTable: """
+Y2 : water, X2 : 0 = 0.19765016247
+Y2 : ice, X2 : 0 = 0.80234983753
+Y2 : water, X2 : 1 = 0.676933020022
+Y2 : ice, X2 : 1 = 0.323066979978
+"""
+
+
+Y5unconditionedVariables: "Y5"
+
+Y5conditionedVariables: "X5"
+
+Y5FactorTable: """
+Y5 : water, X5 : 0 = 0.0
+Y5 : ice, X5 : 0 = 1.0
+Y5 : water, X5 : 1 = 0.419155889929
+Y5 : ice, X5 : 1 = 0.580844110071
+"""
+
+
+Y4unconditionedVariables: "Y4"
+
+Y4conditionedVariables: "X4"
+
+Y4FactorTable: """
+Y4 : water, X4 : 0 = 0.505078886969
+Y4 : ice, X4 : 0 = 0.494921113031
+Y4 : water, X4 : 1 = 0.729463421654
+Y4 : ice, X4 : 1 = 0.270536578346
+"""
+
+
+Y7unconditionedVariables: "Y7"
+
+Y7conditionedVariables: "X7"
+
+Y7FactorTable: """
+Y7 : water, X7 : 0 = 0.42679832335
+Y7 : ice, X7 : 0 = 0.57320167665
+Y7 : water, X7 : 1 = 0.0
+Y7 : ice, X7 : 1 = 1.0
+"""
+
+
+Y6unconditionedVariables: "Y6"
+
+Y6conditionedVariables: "X6"
+
+Y6FactorTable: """
+Y6 : water, X6 : 0 = 1.0
+Y6 : ice, X6 : 0 = 0.0
+Y6 : water, X6 : 1 = 0.0
+Y6 : ice, X6 : 1 = 1.0
+"""
+

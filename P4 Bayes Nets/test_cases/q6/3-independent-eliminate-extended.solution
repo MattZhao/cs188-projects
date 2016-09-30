@@ -1,0 +1,19 @@
+# This is the solution file for test_cases/q6/3-independent-eliminate-extended.test.
+variableDomainsDict: """
+S : slippery rough
+D : dry wet
+W : sun rain
+T : hot
+"""
+
+unconditionedVariables: "W"
+
+conditionedVariables: "T"
+
+FactorTable: """
+W : sun, T : hot = 0.8
+W : rain, T : hot = 0.2
+"""
+
+
+callTrackingList: "[('join', 'S'), ('join', 'D')]"

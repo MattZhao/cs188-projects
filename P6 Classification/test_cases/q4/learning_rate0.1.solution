@@ -1,0 +1,2 @@
+# This is the solution file for test_cases/q4/learning_rate0.1.test.
+update_values_fname: "test_cases/q4/learning_rate0.1.npz"

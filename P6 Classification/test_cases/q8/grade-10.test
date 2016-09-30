@@ -1,0 +1,9 @@
+class: "HyperParamEqualityTest"
+dataset: "mnistDataset"
+model: "mnistSoftmaxRegressionModel"
+maxPoints: "2"
+learning_rates: "0.01 0.2 0.01 0.01"
+momentums: "0.9 0.9 0.1 0.9"
+batch_sizes: "32 32 32 1"
+iterations: "10"
+

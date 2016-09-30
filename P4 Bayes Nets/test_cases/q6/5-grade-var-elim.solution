@@ -1,0 +1,21 @@
+# This is the solution file for test_cases/q6/5-grade-var-elim.test.
+variableDomainsDict: """
+A : 0 1 2
+C : -10.5 1.34
+B : m
+E : singleEntryForThisVariable
+D : help! me! I'mTrapped InaBayesNet
+"""
+
+unconditionedVariables: "A"
+
+conditionedVariables: "B"
+
+FactorTable: """
+A : 0, B : m = 0.516311327629
+A : 1, B : m = 0.387878666494
+A : 2, B : m = 0.0958100058765
+"""
+
+
+callTrackingList: "[('join', 'C'), ('join', 'D'), ('join', 'E')]"

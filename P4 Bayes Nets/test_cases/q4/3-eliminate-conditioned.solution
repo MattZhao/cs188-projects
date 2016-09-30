@@ -1,0 +1,24 @@
+# This is the solution file for test_cases/q4/3-eliminate-conditioned.test.
+variableDomainsDict: """
+B : wind breeze still
+D : wet dry
+W : sun rain
+T : hot cold
+"""
+
+unconditionedVariables: "T W"
+
+conditionedVariables: "D"
+
+FactorTable: """
+T : hot, W : sun, D : wet = 0.431065918609
+T : cold, W : sun, D : wet = 0.1564538411
+T : hot, W : rain, D : wet = 0.293368134088
+T : cold, W : rain, D : wet = 0.119112106203
+T : hot, W : sun, D : dry = 0.332991751449
+T : cold, W : sun, D : dry = 0.0355009323002
+T : hot, W : rain, D : dry = 0.33724755396
+T : cold, W : rain, D : dry = 0.29425976229
+"""
+
+

@@ -1,0 +1,1706 @@
+# This is the solution file for test_cases/q2/1-small-board.test.
+
+variableDomainsDict: """
+obs(4,2) : blue red none
+obs(12,3) : blue red none
+obs(10,4) : blue red none
+obs(10,2) : blue red none
+obs(12,7) : blue red none
+obs(2,2) : blue red none
+obs(2,4) : blue red none
+foodHouse : topLeft topRight bottomLeft bottomRight
+obs(2,7) : blue red none
+ghostHouse : topLeft topRight bottomLeft bottomRight
+obs(10,6) : blue red none
+obs(10,8) : blue red none
+obs(3,4) : blue red none
+obs(4,6) : blue red none
+obs(4,4) : blue red none
+obs(4,3) : blue red none
+obs(11,8) : blue red none
+obs(12,2) : blue red none
+obs(10,3) : blue red none
+obs(3,8) : blue red none
+obs(12,6) : blue red none
+obs(2,3) : blue red none
+obs(10,7) : blue red none
+obs(12,4) : blue red none
+obs(4,8) : blue red none
+xPos : foodLeft ghostLeft
+obs(2,6) : blue red none
+obs(2,8) : blue red none
+yPos : bothTop bothBottom leftTop leftBottom
+obs(12,8) : blue red none
+obs(4,7) : blue red none
+obs(11,4) : blue red none
+"""
+
+obs(4,2)unconditionedVariables: "obs(4,2)"
+
+obs(4,2)conditionedVariables: "ghostHouse foodHouse"
+
+obs(4,2)FactorTable: """
+obs(4,2) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,2) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,2) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(4,2) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,2) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,2) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(4,2) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.4
+obs(4,2) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.6
+obs(4,2) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(4,2) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,2) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,2) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(4,2) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,2) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,2) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(4,2) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,2) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,2) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(4,2) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.4
+obs(4,2) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.6
+obs(4,2) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,2) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,2) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,2) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(4,2) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.7
+obs(4,2) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.3
+obs(4,2) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(4,2) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.7
+obs(4,2) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.3
+obs(4,2) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,2) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.7
+obs(4,2) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.3
+obs(4,2) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,2) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.7
+obs(4,2) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.3
+obs(4,2) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,2) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,2) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,2) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(4,2) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,2) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,2) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(4,2) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.4
+obs(4,2) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.6
+obs(4,2) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,2) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,2) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,2) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(12,3)unconditionedVariables: "obs(12,3)"
+
+obs(12,3)conditionedVariables: "ghostHouse foodHouse"
+
+obs(12,3)FactorTable: """
+obs(12,3) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,3) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,3) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(12,3) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,3) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,3) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(12,3) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,3) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,3) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(12,3) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.4
+obs(12,3) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.6
+obs(12,3) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,3) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,3) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,3) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(12,3) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,3) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,3) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(12,3) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,3) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,3) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(12,3) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.4
+obs(12,3) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.6
+obs(12,3) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(12,3) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,3) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,3) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(12,3) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,3) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,3) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(12,3) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,3) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,3) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(12,3) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.4
+obs(12,3) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.6
+obs(12,3) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,3) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.7
+obs(12,3) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.3
+obs(12,3) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,3) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.7
+obs(12,3) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.3
+obs(12,3) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(12,3) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.7
+obs(12,3) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.3
+obs(12,3) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,3) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0.7
+obs(12,3) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0.3
+obs(12,3) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+"""
+
+
+obs(2,2)unconditionedVariables: "obs(2,2)"
+
+obs(2,2)conditionedVariables: "ghostHouse foodHouse"
+
+obs(2,2)FactorTable: """
+obs(2,2) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,2) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,2) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(2,2) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,2) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,2) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(2,2) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.4
+obs(2,2) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.6
+obs(2,2) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(2,2) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,2) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,2) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(2,2) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,2) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,2) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(2,2) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,2) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,2) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(2,2) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.4
+obs(2,2) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.6
+obs(2,2) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,2) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,2) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,2) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(2,2) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.7
+obs(2,2) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.3
+obs(2,2) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(2,2) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.7
+obs(2,2) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.3
+obs(2,2) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,2) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.7
+obs(2,2) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.3
+obs(2,2) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,2) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.7
+obs(2,2) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.3
+obs(2,2) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,2) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,2) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,2) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(2,2) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,2) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,2) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(2,2) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.4
+obs(2,2) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.6
+obs(2,2) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,2) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,2) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,2) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(10,2)unconditionedVariables: "obs(10,2)"
+
+obs(10,2)conditionedVariables: "ghostHouse foodHouse"
+
+obs(10,2)FactorTable: """
+obs(10,2) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,2) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,2) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(10,2) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,2) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,2) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(10,2) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,2) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,2) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(10,2) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.4
+obs(10,2) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.6
+obs(10,2) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,2) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,2) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,2) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(10,2) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,2) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,2) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(10,2) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,2) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,2) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(10,2) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.4
+obs(10,2) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.6
+obs(10,2) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(10,2) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,2) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,2) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(10,2) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,2) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,2) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(10,2) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,2) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,2) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(10,2) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.4
+obs(10,2) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.6
+obs(10,2) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,2) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.7
+obs(10,2) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.3
+obs(10,2) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,2) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.7
+obs(10,2) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.3
+obs(10,2) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(10,2) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.7
+obs(10,2) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.3
+obs(10,2) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,2) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0.7
+obs(10,2) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0.3
+obs(10,2) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+"""
+
+
+obs(12,7)unconditionedVariables: "obs(12,7)"
+
+obs(12,7)conditionedVariables: "ghostHouse foodHouse"
+
+obs(12,7)FactorTable: """
+obs(12,7) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,7) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,7) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(12,7) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.4
+obs(12,7) : red, ghostHouse : topRight, foodHouse : topLeft = 0.6
+obs(12,7) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,7) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,7) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,7) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(12,7) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,7) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,7) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(12,7) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.7
+obs(12,7) : red, ghostHouse : topLeft, foodHouse : topRight = 0.3
+obs(12,7) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,7) : blue, ghostHouse : topRight, foodHouse : topRight = 0.7
+obs(12,7) : red, ghostHouse : topRight, foodHouse : topRight = 0.3
+obs(12,7) : none, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,7) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.7
+obs(12,7) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.3
+obs(12,7) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,7) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.7
+obs(12,7) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.3
+obs(12,7) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(12,7) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,7) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,7) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(12,7) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.4
+obs(12,7) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.6
+obs(12,7) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,7) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,7) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,7) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(12,7) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,7) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,7) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(12,7) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,7) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,7) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(12,7) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.4
+obs(12,7) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.6
+obs(12,7) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(12,7) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,7) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,7) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(12,7) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(12,7) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(12,7) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(10,4)unconditionedVariables: "obs(10,4)"
+
+obs(10,4)conditionedVariables: "ghostHouse foodHouse"
+
+obs(10,4)FactorTable: """
+obs(10,4) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,4) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,4) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(10,4) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,4) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,4) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(10,4) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,4) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,4) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(10,4) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.4
+obs(10,4) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.6
+obs(10,4) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,4) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,4) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,4) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(10,4) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,4) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,4) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(10,4) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,4) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,4) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(10,4) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.4
+obs(10,4) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.6
+obs(10,4) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(10,4) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,4) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,4) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(10,4) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,4) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,4) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(10,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,4) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,4) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(10,4) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.4
+obs(10,4) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.6
+obs(10,4) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,4) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.7
+obs(10,4) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.3
+obs(10,4) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,4) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.7
+obs(10,4) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.3
+obs(10,4) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(10,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.7
+obs(10,4) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.3
+obs(10,4) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,4) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0.7
+obs(10,4) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0.3
+obs(10,4) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+"""
+
+
+obs(2,4)unconditionedVariables: "obs(2,4)"
+
+obs(2,4)conditionedVariables: "ghostHouse foodHouse"
+
+obs(2,4)FactorTable: """
+obs(2,4) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,4) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,4) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(2,4) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,4) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,4) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(2,4) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.4
+obs(2,4) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.6
+obs(2,4) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(2,4) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,4) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,4) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(2,4) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,4) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,4) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(2,4) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,4) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,4) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(2,4) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.4
+obs(2,4) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.6
+obs(2,4) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,4) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,4) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,4) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(2,4) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.7
+obs(2,4) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.3
+obs(2,4) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(2,4) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.7
+obs(2,4) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.3
+obs(2,4) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.7
+obs(2,4) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.3
+obs(2,4) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,4) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.7
+obs(2,4) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.3
+obs(2,4) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,4) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,4) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,4) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(2,4) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,4) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,4) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(2,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.4
+obs(2,4) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.6
+obs(2,4) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,4) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,4) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,4) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+foodHouseunconditionedVariables: "foodHouse"
+
+foodHouseconditionedVariables: "xPos yPos"
+
+foodHouseFactorTable: """
+foodHouse : topLeft, xPos : foodLeft, yPos : bothTop = 1
+foodHouse : topRight, xPos : foodLeft, yPos : bothTop = 0
+foodHouse : bottomLeft, xPos : foodLeft, yPos : bothTop = 0
+foodHouse : bottomRight, xPos : foodLeft, yPos : bothTop = 0
+foodHouse : topLeft, xPos : ghostLeft, yPos : bothTop = 0
+foodHouse : topRight, xPos : ghostLeft, yPos : bothTop = 1
+foodHouse : bottomLeft, xPos : ghostLeft, yPos : bothTop = 0
+foodHouse : bottomRight, xPos : ghostLeft, yPos : bothTop = 0
+foodHouse : topLeft, xPos : foodLeft, yPos : bothBottom = 0
+foodHouse : topRight, xPos : foodLeft, yPos : bothBottom = 0
+foodHouse : bottomLeft, xPos : foodLeft, yPos : bothBottom = 1
+foodHouse : bottomRight, xPos : foodLeft, yPos : bothBottom = 0
+foodHouse : topLeft, xPos : ghostLeft, yPos : bothBottom = 0
+foodHouse : topRight, xPos : ghostLeft, yPos : bothBottom = 0
+foodHouse : bottomLeft, xPos : ghostLeft, yPos : bothBottom = 0
+foodHouse : bottomRight, xPos : ghostLeft, yPos : bothBottom = 1
+foodHouse : topLeft, xPos : foodLeft, yPos : leftTop = 1
+foodHouse : topRight, xPos : foodLeft, yPos : leftTop = 0
+foodHouse : bottomLeft, xPos : foodLeft, yPos : leftTop = 0
+foodHouse : bottomRight, xPos : foodLeft, yPos : leftTop = 0
+foodHouse : topLeft, xPos : ghostLeft, yPos : leftTop = 0
+foodHouse : topRight, xPos : ghostLeft, yPos : leftTop = 0
+foodHouse : bottomLeft, xPos : ghostLeft, yPos : leftTop = 0
+foodHouse : bottomRight, xPos : ghostLeft, yPos : leftTop = 1
+foodHouse : topLeft, xPos : foodLeft, yPos : leftBottom = 0
+foodHouse : topRight, xPos : foodLeft, yPos : leftBottom = 0
+foodHouse : bottomLeft, xPos : foodLeft, yPos : leftBottom = 1
+foodHouse : bottomRight, xPos : foodLeft, yPos : leftBottom = 0
+foodHouse : topLeft, xPos : ghostLeft, yPos : leftBottom = 0
+foodHouse : topRight, xPos : ghostLeft, yPos : leftBottom = 0
+foodHouse : bottomLeft, xPos : ghostLeft, yPos : leftBottom = 0
+foodHouse : bottomRight, xPos : ghostLeft, yPos : leftBottom = 1
+"""
+
+
+obs(2,7)unconditionedVariables: "obs(2,7)"
+
+obs(2,7)conditionedVariables: "ghostHouse foodHouse"
+
+obs(2,7)FactorTable: """
+obs(2,7) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0.7
+obs(2,7) : red, ghostHouse : topLeft, foodHouse : topLeft = 0.3
+obs(2,7) : none, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,7) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.7
+obs(2,7) : red, ghostHouse : topRight, foodHouse : topLeft = 0.3
+obs(2,7) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,7) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.7
+obs(2,7) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.3
+obs(2,7) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(2,7) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.7
+obs(2,7) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.3
+obs(2,7) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,7) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.4
+obs(2,7) : red, ghostHouse : topLeft, foodHouse : topRight = 0.6
+obs(2,7) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,7) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,7) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,7) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(2,7) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,7) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,7) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(2,7) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,7) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,7) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(2,7) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.4
+obs(2,7) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.6
+obs(2,7) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(2,7) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,7) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,7) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(2,7) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,7) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,7) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(2,7) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,7) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,7) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(2,7) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.4
+obs(2,7) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.6
+obs(2,7) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,7) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,7) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,7) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(2,7) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,7) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,7) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(2,7) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,7) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,7) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+ghostHouseunconditionedVariables: "ghostHouse"
+
+ghostHouseconditionedVariables: "xPos yPos"
+
+ghostHouseFactorTable: """
+ghostHouse : topLeft, xPos : foodLeft, yPos : bothTop = 0
+ghostHouse : topRight, xPos : foodLeft, yPos : bothTop = 1
+ghostHouse : bottomLeft, xPos : foodLeft, yPos : bothTop = 0
+ghostHouse : bottomRight, xPos : foodLeft, yPos : bothTop = 0
+ghostHouse : topLeft, xPos : ghostLeft, yPos : bothTop = 1
+ghostHouse : topRight, xPos : ghostLeft, yPos : bothTop = 0
+ghostHouse : bottomLeft, xPos : ghostLeft, yPos : bothTop = 0
+ghostHouse : bottomRight, xPos : ghostLeft, yPos : bothTop = 0
+ghostHouse : topLeft, xPos : foodLeft, yPos : bothBottom = 0
+ghostHouse : topRight, xPos : foodLeft, yPos : bothBottom = 0
+ghostHouse : bottomLeft, xPos : foodLeft, yPos : bothBottom = 0
+ghostHouse : bottomRight, xPos : foodLeft, yPos : bothBottom = 1
+ghostHouse : topLeft, xPos : ghostLeft, yPos : bothBottom = 0
+ghostHouse : topRight, xPos : ghostLeft, yPos : bothBottom = 0
+ghostHouse : bottomLeft, xPos : ghostLeft, yPos : bothBottom = 1
+ghostHouse : bottomRight, xPos : ghostLeft, yPos : bothBottom = 0
+ghostHouse : topLeft, xPos : foodLeft, yPos : leftTop = 0
+ghostHouse : topRight, xPos : foodLeft, yPos : leftTop = 0
+ghostHouse : bottomLeft, xPos : foodLeft, yPos : leftTop = 0
+ghostHouse : bottomRight, xPos : foodLeft, yPos : leftTop = 1
+ghostHouse : topLeft, xPos : ghostLeft, yPos : leftTop = 1
+ghostHouse : topRight, xPos : ghostLeft, yPos : leftTop = 0
+ghostHouse : bottomLeft, xPos : ghostLeft, yPos : leftTop = 0
+ghostHouse : bottomRight, xPos : ghostLeft, yPos : leftTop = 0
+ghostHouse : topLeft, xPos : foodLeft, yPos : leftBottom = 0
+ghostHouse : topRight, xPos : foodLeft, yPos : leftBottom = 0
+ghostHouse : bottomLeft, xPos : foodLeft, yPos : leftBottom = 0
+ghostHouse : bottomRight, xPos : foodLeft, yPos : leftBottom = 1
+ghostHouse : topLeft, xPos : ghostLeft, yPos : leftBottom = 0
+ghostHouse : topRight, xPos : ghostLeft, yPos : leftBottom = 0
+ghostHouse : bottomLeft, xPos : ghostLeft, yPos : leftBottom = 1
+ghostHouse : bottomRight, xPos : ghostLeft, yPos : leftBottom = 0
+"""
+
+
+obs(10,6)unconditionedVariables: "obs(10,6)"
+
+obs(10,6)conditionedVariables: "ghostHouse foodHouse"
+
+obs(10,6)FactorTable: """
+obs(10,6) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,6) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,6) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(10,6) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.4
+obs(10,6) : red, ghostHouse : topRight, foodHouse : topLeft = 0.6
+obs(10,6) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,6) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,6) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,6) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(10,6) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,6) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,6) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(10,6) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.7
+obs(10,6) : red, ghostHouse : topLeft, foodHouse : topRight = 0.3
+obs(10,6) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,6) : blue, ghostHouse : topRight, foodHouse : topRight = 0.7
+obs(10,6) : red, ghostHouse : topRight, foodHouse : topRight = 0.3
+obs(10,6) : none, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,6) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.7
+obs(10,6) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.3
+obs(10,6) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,6) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.7
+obs(10,6) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.3
+obs(10,6) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(10,6) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,6) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,6) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(10,6) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.4
+obs(10,6) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.6
+obs(10,6) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,6) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,6) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,6) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(10,6) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,6) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,6) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(10,6) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,6) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,6) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(10,6) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.4
+obs(10,6) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.6
+obs(10,6) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(10,6) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,6) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,6) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(10,6) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(10,6) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(10,6) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(4,8)unconditionedVariables: "obs(4,8)"
+
+obs(4,8)conditionedVariables: "ghostHouse foodHouse"
+
+obs(4,8)FactorTable: """
+obs(4,8) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0.7
+obs(4,8) : red, ghostHouse : topLeft, foodHouse : topLeft = 0.3
+obs(4,8) : none, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,8) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.7
+obs(4,8) : red, ghostHouse : topRight, foodHouse : topLeft = 0.3
+obs(4,8) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,8) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.7
+obs(4,8) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.3
+obs(4,8) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(4,8) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.7
+obs(4,8) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.3
+obs(4,8) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,8) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.4
+obs(4,8) : red, ghostHouse : topLeft, foodHouse : topRight = 0.6
+obs(4,8) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,8) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,8) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,8) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(4,8) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,8) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,8) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(4,8) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,8) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,8) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(4,8) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.4
+obs(4,8) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.6
+obs(4,8) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(4,8) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,8) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,8) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(4,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,8) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,8) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(4,8) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,8) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,8) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(4,8) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.4
+obs(4,8) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.6
+obs(4,8) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,8) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,8) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,8) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(4,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,8) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,8) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(4,8) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,8) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,8) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(3,4)unconditionedVariables: "obs(3,4)"
+
+obs(3,4)conditionedVariables: "ghostHouse foodHouse"
+
+obs(3,4)FactorTable: """
+obs(3,4) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(3,4) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(3,4) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(3,4) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(3,4) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(3,4) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(3,4) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.4
+obs(3,4) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.6
+obs(3,4) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(3,4) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(3,4) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(3,4) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(3,4) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(3,4) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(3,4) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(3,4) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(3,4) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(3,4) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(3,4) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.4
+obs(3,4) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.6
+obs(3,4) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(3,4) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(3,4) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(3,4) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(3,4) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.7
+obs(3,4) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.3
+obs(3,4) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(3,4) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.7
+obs(3,4) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.3
+obs(3,4) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(3,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.7
+obs(3,4) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.3
+obs(3,4) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(3,4) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.7
+obs(3,4) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.3
+obs(3,4) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(3,4) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(3,4) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(3,4) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(3,4) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(3,4) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(3,4) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(3,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.4
+obs(3,4) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.6
+obs(3,4) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(3,4) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(3,4) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(3,4) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(4,6)unconditionedVariables: "obs(4,6)"
+
+obs(4,6)conditionedVariables: "ghostHouse foodHouse"
+
+obs(4,6)FactorTable: """
+obs(4,6) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0.7
+obs(4,6) : red, ghostHouse : topLeft, foodHouse : topLeft = 0.3
+obs(4,6) : none, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,6) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.7
+obs(4,6) : red, ghostHouse : topRight, foodHouse : topLeft = 0.3
+obs(4,6) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,6) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.7
+obs(4,6) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.3
+obs(4,6) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(4,6) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.7
+obs(4,6) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.3
+obs(4,6) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,6) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.4
+obs(4,6) : red, ghostHouse : topLeft, foodHouse : topRight = 0.6
+obs(4,6) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,6) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,6) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,6) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(4,6) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,6) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,6) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(4,6) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,6) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,6) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(4,6) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.4
+obs(4,6) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.6
+obs(4,6) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(4,6) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,6) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,6) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(4,6) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,6) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,6) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(4,6) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,6) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,6) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(4,6) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.4
+obs(4,6) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.6
+obs(4,6) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,6) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,6) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,6) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(4,6) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,6) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,6) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(4,6) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,6) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,6) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(4,4)unconditionedVariables: "obs(4,4)"
+
+obs(4,4)conditionedVariables: "ghostHouse foodHouse"
+
+obs(4,4)FactorTable: """
+obs(4,4) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,4) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,4) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(4,4) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,4) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,4) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(4,4) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.4
+obs(4,4) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.6
+obs(4,4) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(4,4) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,4) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,4) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(4,4) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,4) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,4) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(4,4) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,4) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,4) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(4,4) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.4
+obs(4,4) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.6
+obs(4,4) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,4) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,4) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,4) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(4,4) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.7
+obs(4,4) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.3
+obs(4,4) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(4,4) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.7
+obs(4,4) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.3
+obs(4,4) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.7
+obs(4,4) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.3
+obs(4,4) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,4) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.7
+obs(4,4) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.3
+obs(4,4) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,4) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,4) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,4) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(4,4) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,4) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,4) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(4,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.4
+obs(4,4) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.6
+obs(4,4) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,4) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,4) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,4) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(4,3)unconditionedVariables: "obs(4,3)"
+
+obs(4,3)conditionedVariables: "ghostHouse foodHouse"
+
+obs(4,3)FactorTable: """
+obs(4,3) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,3) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,3) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(4,3) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,3) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,3) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(4,3) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.4
+obs(4,3) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.6
+obs(4,3) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(4,3) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,3) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,3) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(4,3) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,3) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,3) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(4,3) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,3) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,3) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(4,3) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.4
+obs(4,3) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.6
+obs(4,3) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,3) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,3) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,3) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(4,3) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.7
+obs(4,3) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.3
+obs(4,3) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(4,3) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.7
+obs(4,3) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.3
+obs(4,3) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,3) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.7
+obs(4,3) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.3
+obs(4,3) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,3) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.7
+obs(4,3) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.3
+obs(4,3) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,3) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,3) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,3) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(4,3) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,3) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,3) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(4,3) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.4
+obs(4,3) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.6
+obs(4,3) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,3) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,3) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,3) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(11,8)unconditionedVariables: "obs(11,8)"
+
+obs(11,8)conditionedVariables: "ghostHouse foodHouse"
+
+obs(11,8)FactorTable: """
+obs(11,8) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(11,8) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(11,8) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(11,8) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.4
+obs(11,8) : red, ghostHouse : topRight, foodHouse : topLeft = 0.6
+obs(11,8) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(11,8) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(11,8) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(11,8) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(11,8) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(11,8) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(11,8) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(11,8) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.7
+obs(11,8) : red, ghostHouse : topLeft, foodHouse : topRight = 0.3
+obs(11,8) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(11,8) : blue, ghostHouse : topRight, foodHouse : topRight = 0.7
+obs(11,8) : red, ghostHouse : topRight, foodHouse : topRight = 0.3
+obs(11,8) : none, ghostHouse : topRight, foodHouse : topRight = 0
+obs(11,8) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.7
+obs(11,8) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.3
+obs(11,8) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(11,8) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.7
+obs(11,8) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.3
+obs(11,8) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(11,8) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(11,8) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(11,8) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(11,8) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.4
+obs(11,8) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.6
+obs(11,8) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(11,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(11,8) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(11,8) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(11,8) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(11,8) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(11,8) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(11,8) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(11,8) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(11,8) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(11,8) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.4
+obs(11,8) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.6
+obs(11,8) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(11,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(11,8) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(11,8) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(11,8) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(11,8) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(11,8) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(10,8)unconditionedVariables: "obs(10,8)"
+
+obs(10,8)conditionedVariables: "ghostHouse foodHouse"
+
+obs(10,8)FactorTable: """
+obs(10,8) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,8) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,8) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(10,8) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.4
+obs(10,8) : red, ghostHouse : topRight, foodHouse : topLeft = 0.6
+obs(10,8) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,8) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,8) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,8) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(10,8) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,8) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,8) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(10,8) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.7
+obs(10,8) : red, ghostHouse : topLeft, foodHouse : topRight = 0.3
+obs(10,8) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,8) : blue, ghostHouse : topRight, foodHouse : topRight = 0.7
+obs(10,8) : red, ghostHouse : topRight, foodHouse : topRight = 0.3
+obs(10,8) : none, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,8) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.7
+obs(10,8) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.3
+obs(10,8) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,8) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.7
+obs(10,8) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.3
+obs(10,8) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(10,8) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,8) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,8) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(10,8) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.4
+obs(10,8) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.6
+obs(10,8) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,8) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,8) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(10,8) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,8) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,8) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(10,8) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,8) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,8) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(10,8) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.4
+obs(10,8) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.6
+obs(10,8) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(10,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,8) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,8) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(10,8) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(10,8) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(10,8) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(12,2)unconditionedVariables: "obs(12,2)"
+
+obs(12,2)conditionedVariables: "ghostHouse foodHouse"
+
+obs(12,2)FactorTable: """
+obs(12,2) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,2) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,2) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(12,2) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,2) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,2) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(12,2) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,2) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,2) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(12,2) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.4
+obs(12,2) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.6
+obs(12,2) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,2) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,2) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,2) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(12,2) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,2) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,2) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(12,2) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,2) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,2) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(12,2) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.4
+obs(12,2) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.6
+obs(12,2) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(12,2) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,2) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,2) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(12,2) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,2) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,2) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(12,2) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,2) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,2) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(12,2) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.4
+obs(12,2) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.6
+obs(12,2) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,2) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.7
+obs(12,2) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.3
+obs(12,2) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,2) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.7
+obs(12,2) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.3
+obs(12,2) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(12,2) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.7
+obs(12,2) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.3
+obs(12,2) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,2) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0.7
+obs(12,2) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0.3
+obs(12,2) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+"""
+
+
+obs(10,3)unconditionedVariables: "obs(10,3)"
+
+obs(10,3)conditionedVariables: "ghostHouse foodHouse"
+
+obs(10,3)FactorTable: """
+obs(10,3) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,3) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,3) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(10,3) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,3) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,3) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(10,3) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,3) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,3) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(10,3) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.4
+obs(10,3) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.6
+obs(10,3) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,3) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,3) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,3) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(10,3) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,3) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,3) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(10,3) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,3) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,3) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(10,3) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.4
+obs(10,3) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.6
+obs(10,3) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(10,3) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,3) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,3) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(10,3) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,3) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,3) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(10,3) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,3) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,3) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(10,3) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.4
+obs(10,3) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.6
+obs(10,3) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,3) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.7
+obs(10,3) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.3
+obs(10,3) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,3) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.7
+obs(10,3) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.3
+obs(10,3) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(10,3) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.7
+obs(10,3) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.3
+obs(10,3) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,3) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0.7
+obs(10,3) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0.3
+obs(10,3) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+"""
+
+
+obs(3,8)unconditionedVariables: "obs(3,8)"
+
+obs(3,8)conditionedVariables: "ghostHouse foodHouse"
+
+obs(3,8)FactorTable: """
+obs(3,8) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0.7
+obs(3,8) : red, ghostHouse : topLeft, foodHouse : topLeft = 0.3
+obs(3,8) : none, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(3,8) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.7
+obs(3,8) : red, ghostHouse : topRight, foodHouse : topLeft = 0.3
+obs(3,8) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(3,8) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.7
+obs(3,8) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.3
+obs(3,8) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(3,8) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.7
+obs(3,8) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.3
+obs(3,8) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(3,8) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.4
+obs(3,8) : red, ghostHouse : topLeft, foodHouse : topRight = 0.6
+obs(3,8) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(3,8) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(3,8) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(3,8) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(3,8) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(3,8) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(3,8) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(3,8) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(3,8) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(3,8) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(3,8) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.4
+obs(3,8) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.6
+obs(3,8) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(3,8) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(3,8) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(3,8) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(3,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(3,8) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(3,8) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(3,8) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(3,8) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(3,8) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(3,8) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.4
+obs(3,8) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.6
+obs(3,8) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(3,8) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(3,8) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(3,8) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(3,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(3,8) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(3,8) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(3,8) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(3,8) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(3,8) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(12,6)unconditionedVariables: "obs(12,6)"
+
+obs(12,6)conditionedVariables: "ghostHouse foodHouse"
+
+obs(12,6)FactorTable: """
+obs(12,6) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,6) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,6) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(12,6) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.4
+obs(12,6) : red, ghostHouse : topRight, foodHouse : topLeft = 0.6
+obs(12,6) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,6) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,6) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,6) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(12,6) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,6) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,6) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(12,6) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.7
+obs(12,6) : red, ghostHouse : topLeft, foodHouse : topRight = 0.3
+obs(12,6) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,6) : blue, ghostHouse : topRight, foodHouse : topRight = 0.7
+obs(12,6) : red, ghostHouse : topRight, foodHouse : topRight = 0.3
+obs(12,6) : none, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,6) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.7
+obs(12,6) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.3
+obs(12,6) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,6) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.7
+obs(12,6) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.3
+obs(12,6) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(12,6) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,6) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,6) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(12,6) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.4
+obs(12,6) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.6
+obs(12,6) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,6) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,6) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,6) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(12,6) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,6) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,6) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(12,6) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,6) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,6) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(12,6) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.4
+obs(12,6) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.6
+obs(12,6) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(12,6) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,6) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,6) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(12,6) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(12,6) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(12,6) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(2,3)unconditionedVariables: "obs(2,3)"
+
+obs(2,3)conditionedVariables: "ghostHouse foodHouse"
+
+obs(2,3)FactorTable: """
+obs(2,3) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,3) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,3) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(2,3) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,3) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,3) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(2,3) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.4
+obs(2,3) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.6
+obs(2,3) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(2,3) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,3) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,3) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(2,3) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,3) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,3) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(2,3) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,3) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,3) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(2,3) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.4
+obs(2,3) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.6
+obs(2,3) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,3) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,3) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,3) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(2,3) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.7
+obs(2,3) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.3
+obs(2,3) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(2,3) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.7
+obs(2,3) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.3
+obs(2,3) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,3) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.7
+obs(2,3) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0.3
+obs(2,3) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,3) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.7
+obs(2,3) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.3
+obs(2,3) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,3) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,3) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,3) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(2,3) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,3) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,3) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(2,3) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.4
+obs(2,3) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.6
+obs(2,3) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,3) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,3) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,3) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(10,7)unconditionedVariables: "obs(10,7)"
+
+obs(10,7)conditionedVariables: "ghostHouse foodHouse"
+
+obs(10,7)FactorTable: """
+obs(10,7) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,7) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(10,7) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(10,7) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.4
+obs(10,7) : red, ghostHouse : topRight, foodHouse : topLeft = 0.6
+obs(10,7) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(10,7) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,7) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(10,7) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(10,7) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,7) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(10,7) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(10,7) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.7
+obs(10,7) : red, ghostHouse : topLeft, foodHouse : topRight = 0.3
+obs(10,7) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(10,7) : blue, ghostHouse : topRight, foodHouse : topRight = 0.7
+obs(10,7) : red, ghostHouse : topRight, foodHouse : topRight = 0.3
+obs(10,7) : none, ghostHouse : topRight, foodHouse : topRight = 0
+obs(10,7) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.7
+obs(10,7) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.3
+obs(10,7) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(10,7) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.7
+obs(10,7) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.3
+obs(10,7) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(10,7) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,7) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(10,7) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(10,7) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.4
+obs(10,7) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.6
+obs(10,7) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(10,7) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,7) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(10,7) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(10,7) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,7) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(10,7) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(10,7) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,7) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(10,7) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(10,7) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.4
+obs(10,7) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.6
+obs(10,7) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(10,7) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,7) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(10,7) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(10,7) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(10,7) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(10,7) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(12,4)unconditionedVariables: "obs(12,4)"
+
+obs(12,4)conditionedVariables: "ghostHouse foodHouse"
+
+obs(12,4)FactorTable: """
+obs(12,4) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,4) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,4) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(12,4) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,4) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,4) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(12,4) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,4) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,4) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(12,4) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.4
+obs(12,4) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.6
+obs(12,4) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,4) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,4) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,4) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(12,4) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,4) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,4) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(12,4) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,4) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,4) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(12,4) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.4
+obs(12,4) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.6
+obs(12,4) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(12,4) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,4) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,4) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(12,4) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,4) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,4) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(12,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,4) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,4) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(12,4) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.4
+obs(12,4) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.6
+obs(12,4) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,4) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.7
+obs(12,4) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.3
+obs(12,4) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,4) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.7
+obs(12,4) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.3
+obs(12,4) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(12,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.7
+obs(12,4) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.3
+obs(12,4) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,4) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0.7
+obs(12,4) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0.3
+obs(12,4) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+"""
+
+
+xPosunconditionedVariables: "xPos"
+
+xPosconditionedVariables: ""
+
+xPosFactorTable: """
+xPos : foodLeft = 0.4
+xPos : ghostLeft = 0.6
+"""
+
+
+obs(2,6)unconditionedVariables: "obs(2,6)"
+
+obs(2,6)conditionedVariables: "ghostHouse foodHouse"
+
+obs(2,6)FactorTable: """
+obs(2,6) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0.7
+obs(2,6) : red, ghostHouse : topLeft, foodHouse : topLeft = 0.3
+obs(2,6) : none, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,6) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.7
+obs(2,6) : red, ghostHouse : topRight, foodHouse : topLeft = 0.3
+obs(2,6) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,6) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.7
+obs(2,6) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.3
+obs(2,6) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(2,6) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.7
+obs(2,6) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.3
+obs(2,6) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,6) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.4
+obs(2,6) : red, ghostHouse : topLeft, foodHouse : topRight = 0.6
+obs(2,6) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,6) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,6) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,6) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(2,6) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,6) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,6) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(2,6) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,6) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,6) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(2,6) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.4
+obs(2,6) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.6
+obs(2,6) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(2,6) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,6) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,6) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(2,6) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,6) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,6) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(2,6) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,6) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,6) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(2,6) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.4
+obs(2,6) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.6
+obs(2,6) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,6) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,6) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,6) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(2,6) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,6) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,6) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(2,6) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,6) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,6) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(2,8)unconditionedVariables: "obs(2,8)"
+
+obs(2,8)conditionedVariables: "ghostHouse foodHouse"
+
+obs(2,8)FactorTable: """
+obs(2,8) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0.7
+obs(2,8) : red, ghostHouse : topLeft, foodHouse : topLeft = 0.3
+obs(2,8) : none, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(2,8) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.7
+obs(2,8) : red, ghostHouse : topRight, foodHouse : topLeft = 0.3
+obs(2,8) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(2,8) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.7
+obs(2,8) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.3
+obs(2,8) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(2,8) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.7
+obs(2,8) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.3
+obs(2,8) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(2,8) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.4
+obs(2,8) : red, ghostHouse : topLeft, foodHouse : topRight = 0.6
+obs(2,8) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(2,8) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,8) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(2,8) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(2,8) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,8) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(2,8) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(2,8) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,8) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(2,8) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(2,8) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.4
+obs(2,8) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.6
+obs(2,8) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(2,8) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,8) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(2,8) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(2,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,8) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(2,8) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(2,8) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,8) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(2,8) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(2,8) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.4
+obs(2,8) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.6
+obs(2,8) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(2,8) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,8) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(2,8) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(2,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,8) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(2,8) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(2,8) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,8) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(2,8) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+yPosunconditionedVariables: "yPos"
+
+yPosconditionedVariables: ""
+
+yPosFactorTable: """
+yPos : bothTop = 0.18
+yPos : bothBottom = 0.12
+yPos : leftTop = 0.42
+yPos : leftBottom = 0.28
+"""
+
+
+obs(12,8)unconditionedVariables: "obs(12,8)"
+
+obs(12,8)conditionedVariables: "ghostHouse foodHouse"
+
+obs(12,8)FactorTable: """
+obs(12,8) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,8) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(12,8) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(12,8) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.4
+obs(12,8) : red, ghostHouse : topRight, foodHouse : topLeft = 0.6
+obs(12,8) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(12,8) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,8) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(12,8) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(12,8) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,8) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(12,8) : none, ghostHouse : bottomRight, foodHouse : topLeft = 1
+obs(12,8) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.7
+obs(12,8) : red, ghostHouse : topLeft, foodHouse : topRight = 0.3
+obs(12,8) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(12,8) : blue, ghostHouse : topRight, foodHouse : topRight = 0.7
+obs(12,8) : red, ghostHouse : topRight, foodHouse : topRight = 0.3
+obs(12,8) : none, ghostHouse : topRight, foodHouse : topRight = 0
+obs(12,8) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0.7
+obs(12,8) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0.3
+obs(12,8) : none, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(12,8) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.7
+obs(12,8) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.3
+obs(12,8) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(12,8) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,8) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(12,8) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(12,8) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0.4
+obs(12,8) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0.6
+obs(12,8) : none, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(12,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,8) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(12,8) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(12,8) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,8) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(12,8) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(12,8) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,8) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(12,8) : none, ghostHouse : topLeft, foodHouse : bottomRight = 1
+obs(12,8) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.4
+obs(12,8) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.6
+obs(12,8) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(12,8) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,8) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(12,8) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(12,8) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(12,8) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(12,8) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(4,7)unconditionedVariables: "obs(4,7)"
+
+obs(4,7)conditionedVariables: "ghostHouse foodHouse"
+
+obs(4,7)FactorTable: """
+obs(4,7) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0.7
+obs(4,7) : red, ghostHouse : topLeft, foodHouse : topLeft = 0.3
+obs(4,7) : none, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(4,7) : blue, ghostHouse : topRight, foodHouse : topLeft = 0.7
+obs(4,7) : red, ghostHouse : topRight, foodHouse : topLeft = 0.3
+obs(4,7) : none, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(4,7) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0.7
+obs(4,7) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0.3
+obs(4,7) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(4,7) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.7
+obs(4,7) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.3
+obs(4,7) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(4,7) : blue, ghostHouse : topLeft, foodHouse : topRight = 0.4
+obs(4,7) : red, ghostHouse : topLeft, foodHouse : topRight = 0.6
+obs(4,7) : none, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(4,7) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,7) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(4,7) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(4,7) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,7) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(4,7) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(4,7) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,7) : red, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(4,7) : none, ghostHouse : bottomRight, foodHouse : topRight = 1
+obs(4,7) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0.4
+obs(4,7) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0.6
+obs(4,7) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(4,7) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,7) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(4,7) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(4,7) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,7) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(4,7) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(4,7) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,7) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(4,7) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 1
+obs(4,7) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.4
+obs(4,7) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.6
+obs(4,7) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(4,7) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,7) : red, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(4,7) : none, ghostHouse : topRight, foodHouse : bottomRight = 1
+obs(4,7) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,7) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(4,7) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 1
+obs(4,7) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,7) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+obs(4,7) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 1
+"""
+
+
+obs(11,4)unconditionedVariables: "obs(11,4)"
+
+obs(11,4)conditionedVariables: "ghostHouse foodHouse"
+
+obs(11,4)FactorTable: """
+obs(11,4) : blue, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(11,4) : red, ghostHouse : topLeft, foodHouse : topLeft = 0
+obs(11,4) : none, ghostHouse : topLeft, foodHouse : topLeft = 1
+obs(11,4) : blue, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(11,4) : red, ghostHouse : topRight, foodHouse : topLeft = 0
+obs(11,4) : none, ghostHouse : topRight, foodHouse : topLeft = 1
+obs(11,4) : blue, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(11,4) : red, ghostHouse : bottomLeft, foodHouse : topLeft = 0
+obs(11,4) : none, ghostHouse : bottomLeft, foodHouse : topLeft = 1
+obs(11,4) : blue, ghostHouse : bottomRight, foodHouse : topLeft = 0.4
+obs(11,4) : red, ghostHouse : bottomRight, foodHouse : topLeft = 0.6
+obs(11,4) : none, ghostHouse : bottomRight, foodHouse : topLeft = 0
+obs(11,4) : blue, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(11,4) : red, ghostHouse : topLeft, foodHouse : topRight = 0
+obs(11,4) : none, ghostHouse : topLeft, foodHouse : topRight = 1
+obs(11,4) : blue, ghostHouse : topRight, foodHouse : topRight = 0
+obs(11,4) : red, ghostHouse : topRight, foodHouse : topRight = 0
+obs(11,4) : none, ghostHouse : topRight, foodHouse : topRight = 1
+obs(11,4) : blue, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(11,4) : red, ghostHouse : bottomLeft, foodHouse : topRight = 0
+obs(11,4) : none, ghostHouse : bottomLeft, foodHouse : topRight = 1
+obs(11,4) : blue, ghostHouse : bottomRight, foodHouse : topRight = 0.4
+obs(11,4) : red, ghostHouse : bottomRight, foodHouse : topRight = 0.6
+obs(11,4) : none, ghostHouse : bottomRight, foodHouse : topRight = 0
+obs(11,4) : blue, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(11,4) : red, ghostHouse : topLeft, foodHouse : bottomLeft = 0
+obs(11,4) : none, ghostHouse : topLeft, foodHouse : bottomLeft = 1
+obs(11,4) : blue, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(11,4) : red, ghostHouse : topRight, foodHouse : bottomLeft = 0
+obs(11,4) : none, ghostHouse : topRight, foodHouse : bottomLeft = 1
+obs(11,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(11,4) : red, ghostHouse : bottomLeft, foodHouse : bottomLeft = 0
+obs(11,4) : none, ghostHouse : bottomLeft, foodHouse : bottomLeft = 1
+obs(11,4) : blue, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.4
+obs(11,4) : red, ghostHouse : bottomRight, foodHouse : bottomLeft = 0.6
+obs(11,4) : none, ghostHouse : bottomRight, foodHouse : bottomLeft = 0
+obs(11,4) : blue, ghostHouse : topLeft, foodHouse : bottomRight = 0.7
+obs(11,4) : red, ghostHouse : topLeft, foodHouse : bottomRight = 0.3
+obs(11,4) : none, ghostHouse : topLeft, foodHouse : bottomRight = 0
+obs(11,4) : blue, ghostHouse : topRight, foodHouse : bottomRight = 0.7
+obs(11,4) : red, ghostHouse : topRight, foodHouse : bottomRight = 0.3
+obs(11,4) : none, ghostHouse : topRight, foodHouse : bottomRight = 0
+obs(11,4) : blue, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.7
+obs(11,4) : red, ghostHouse : bottomLeft, foodHouse : bottomRight = 0.3
+obs(11,4) : none, ghostHouse : bottomLeft, foodHouse : bottomRight = 0
+obs(11,4) : blue, ghostHouse : bottomRight, foodHouse : bottomRight = 0.7
+obs(11,4) : red, ghostHouse : bottomRight, foodHouse : bottomRight = 0.3
+obs(11,4) : none, ghostHouse : bottomRight, foodHouse : bottomRight = 0
+"""
+

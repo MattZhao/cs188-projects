@@ -1,0 +1,35 @@
+class: "OutputTest"
+success: "PASS"
+failure: "NO PASS"
+
+# Python statements initializing variables for the test below.
+preamble: """
+import inference
+
+class dummyGhostAgent(object):
+    pass
+dummyGhostAgent = dummyGhostAgent()
+dummyGhostAgent.index = 1
+inf = inference.InferenceModule(dummyGhostAgent)
+pacmanPosition = (3, 5)
+ghostPosition = (4, 6)
+jailPosition = inf.getJailPosition()
+
+ans1 = inf.getObservationProb(1, pacmanPosition, ghostPosition, jailPosition)
+ans2 = inf.getObservationProb(2, pacmanPosition, ghostPosition, jailPosition)
+ans3 = inf.getObservationProb(5, pacmanPosition, ghostPosition, jailPosition)
+ans4 = inf.getObservationProb(None, pacmanPosition, ghostPosition, jailPosition)
+ans5 = inf.getObservationProb(1, pacmanPosition, jailPosition, jailPosition)
+ans6 = inf.getObservationProb(2, pacmanPosition, jailPosition, jailPosition)
+ans7 = inf.getObservationProb(5, pacmanPosition, jailPosition, jailPosition)
+ans8 = inf.getObservationProb(None, pacmanPosition, jailPosition, jailPosition)
+
+ans = map(float, [ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8])
+"""
+
+# A python expression to be evaluated.  This expression must return the 
+# same result for the student and instructor's code.
+
+test: "ans"
+
+

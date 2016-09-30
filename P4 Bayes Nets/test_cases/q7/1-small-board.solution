@@ -1,0 +1,5 @@
+# This is the solution file for test_cases/q7/1-small-board.test.
+
+answer: """
+topLeft
+"""

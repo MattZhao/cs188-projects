@@ -1,0 +1,24 @@
+class: "PrioritizedSweepingValueIterationTest"
+
+# GridWorld specification
+#    _ is empty space
+#    numbers are terminal states with that value
+#    # is a wall
+#    S is a start state
+#
+grid: """
+    # -100 -100 -100 -100 -100    #
+    1    S    _    _    _    _   10
+    # -100 -100 -100 -100 -100    #
+"""
+gridName: "bridgeGrid"
+discount: "0.85"
+noise: "0.1"
+livingReward: "0.0"
+epsilon: "0.5"
+learningRate: "0.1"
+numExperiences: "500"
+valueIterations: "1000"
+iterations: "10000"
+
+

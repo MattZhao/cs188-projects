@@ -1,0 +1,53 @@
+class: "FactorInputFactorEqualityTest"
+max_points: "4"
+alg: "joinFactors"
+factorArgs: "A B"
+seed: "cs188"
+constructRandomly: "False"
+
+
+variableDomainsDict: """
+L : 0 1 2
+M : l m n o
+N : -10.5 1.34
+O : help! me! I'mTrapped InaBayesNet
+Q : singleEntryForThisVariable
+"""
+
+# endOfNonFactors
+
+AunconditionedVariables: "M L"
+
+AconditionedVariables: "Q"
+
+AFactorTable: """
+L : 0, M : l, Q : singleEntryForThisVariable = 0.258330124403
+L : 1, M : l, Q : singleEntryForThisVariable = 0.172735794206
+L : 2, M : l, Q : singleEntryForThisVariable = 0.0
+L : 0, M : m, Q : singleEntryForThisVariable = 0.104734692091
+L : 1, M : m, Q : singleEntryForThisVariable = 0.0125717596017
+L : 2, M : m, Q : singleEntryForThisVariable = 0.0391473894072
+L : 0, M : n, Q : singleEntryForThisVariable = 0.0377614688681
+L : 1, M : n, Q : singleEntryForThisVariable = 0.0638957615356
+L : 2, M : n, Q : singleEntryForThisVariable = 0.191710903684
+L : 0, M : o, Q : singleEntryForThisVariable = 0.0
+L : 1, M : o, Q : singleEntryForThisVariable = 0.0667905852913
+L : 2, M : o, Q : singleEntryForThisVariable = 0.0523215209113
+"""
+
+
+BunconditionedVariables: "N"
+
+BconditionedVariables: "O"
+
+BFactorTable: """
+N : -10.5, O : help! = 1.0
+N : 1.34, O : help! = 0.0
+N : -10.5, O : me! = 0.563537707688
+N : 1.34, O : me! = 0.436462292312
+N : -10.5, O : I'mTrapped = 0.757073830056
+N : 1.34, O : I'mTrapped = 0.242926169944
+N : -10.5, O : InaBayesNet = 0.523145587487
+N : 1.34, O : InaBayesNet = 0.476854412513
+"""
+

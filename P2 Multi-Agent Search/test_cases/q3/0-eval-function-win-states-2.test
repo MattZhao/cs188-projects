@@ -1,0 +1,30 @@
+class: "GraphGameTreeTest"
+alg: "AlphaBetaAgent"
+depth: "2"
+
+diagram: """
+        root
+       /    \
+    win1    win2
+      0      1
+
+If your algorithm is returning a different
+action, make sure you are calling the
+evaluation function on winning states.
+"""
+num_agents: "2"
+
+start_state: "root"
+win_states: "win1 win2"
+lose_states: ""
+
+successors: """
+root Left win1
+root Right win2
+"""
+
+evaluation: """
+win1 0.0
+win2 1.0
+"""
+

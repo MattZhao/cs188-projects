@@ -1,0 +1,122 @@
+class: "FactorInputFactorEqualityTest"
+max_points: "4"
+alg: "eliminate"
+factorArgs: "A"
+eliminateVariable: "L1"
+seed: "cs188"
+constructRandomly: "False"
+
+
+variableDomainsDict: """
+L1 : 0 1 2
+M1 : l m n o
+N1 : -10.5 1.34
+O1 : help! me! I'mTrapped InaBayesNet
+Q1 : myNameHasMoreThanOneLetter
+"""
+
+# endOfNonFactors
+
+AunconditionedVariables: "M1 O1 L1"
+
+AconditionedVariables: "Q1 N1"
+
+AFactorTable: """
+L1 : 0, M1 : l, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0447769827421
+L1 : 1, M1 : l, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0335548259369
+L1 : 2, M1 : l, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0135133823856
+L1 : 0, M1 : m, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0299407113048
+L1 : 1, M1 : m, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0190137493524
+L1 : 2, M1 : m, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0459168029028
+L1 : 0, M1 : n, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 1, M1 : n, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0481229169727
+L1 : 2, M1 : n, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0264097152778
+L1 : 0, M1 : o, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0484229139817
+L1 : 1, M1 : o, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.00296557788646
+L1 : 2, M1 : o, O1 : help!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0490236571006
+L1 : 0, M1 : l, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0181539164706
+L1 : 1, M1 : l, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0107669094141
+L1 : 2, M1 : l, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 0, M1 : m, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.00217909337527
+L1 : 1, M1 : m, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 2, M1 : m, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0403565271376
+L1 : 0, M1 : n, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.00678551130624
+L1 : 1, M1 : n, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0305996504641
+L1 : 2, M1 : n, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0489301511809
+L1 : 0, M1 : o, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 1, M1 : o, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 2, M1 : o, O1 : me!, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0045288246707
+L1 : 0, M1 : l, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.00654528636072
+L1 : 1, M1 : l, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0437076697087
+L1 : 2, M1 : l, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 0, M1 : m, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0110752062624
+L1 : 1, M1 : m, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0396237693127
+L1 : 2, M1 : m, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0123021915473
+L1 : 0, M1 : n, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0332297127389
+L1 : 1, M1 : n, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0299842528698
+L1 : 2, M1 : n, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 0, M1 : o, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0189507724124
+L1 : 1, M1 : o, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 2, M1 : o, O1 : I'mTrapped, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 0, M1 : l, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 1, M1 : l, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.039840143279
+L1 : 2, M1 : l, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0351210471164
+L1 : 0, M1 : m, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0115769730372
+L1 : 1, M1 : m, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0347270528183
+L1 : 2, M1 : m, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0382716139813
+L1 : 0, M1 : n, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0090690152544
+L1 : 1, M1 : n, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.00799625915824
+L1 : 2, M1 : n, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0295772931739
+L1 : 0, M1 : o, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0146774518464
+L1 : 1, M1 : o, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.013443479893
+L1 : 2, M1 : o, O1 : InaBayesNet, N1 : -10.5, Q1 : myNameHasMoreThanOneLetter = 0.0463189893654
+L1 : 0, M1 : l, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.00746874052442
+L1 : 1, M1 : l, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0170706440325
+L1 : 2, M1 : l, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0125889576289
+L1 : 0, M1 : m, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.024671121071
+L1 : 1, M1 : m, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.00626546229009
+L1 : 2, M1 : m, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 0, M1 : n, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0246502130155
+L1 : 1, M1 : n, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0434087985544
+L1 : 2, M1 : n, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0128190936074
+L1 : 0, M1 : o, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0242600514229
+L1 : 1, M1 : o, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0038706658879
+L1 : 2, M1 : o, O1 : help!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.000564853924528
+L1 : 0, M1 : l, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0411575250006
+L1 : 1, M1 : l, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 2, M1 : l, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0293529082434
+L1 : 0, M1 : m, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0165362781706
+L1 : 1, M1 : m, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.026525369977
+L1 : 2, M1 : m, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0177402756729
+L1 : 0, M1 : n, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0488609903771
+L1 : 1, M1 : n, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0072654289765
+L1 : 2, M1 : n, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.025527974888
+L1 : 0, M1 : o, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0391811589986
+L1 : 1, M1 : o, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 2, M1 : o, O1 : me!, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0494160410886
+L1 : 0, M1 : l, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0552756677955
+L1 : 1, M1 : l, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 2, M1 : l, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0321280167988
+L1 : 0, M1 : m, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 1, M1 : m, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.005603470804
+L1 : 2, M1 : m, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0479437369214
+L1 : 0, M1 : n, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 1, M1 : n, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 2, M1 : n, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0302095703475
+L1 : 0, M1 : o, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0227207214722
+L1 : 1, M1 : o, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0161232920219
+L1 : 2, M1 : o, O1 : I'mTrapped, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0151621127433
+L1 : 0, M1 : l, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 1, M1 : l, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0101119740519
+L1 : 2, M1 : l, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0543868524166
+L1 : 0, M1 : m, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 1, M1 : m, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0379246424001
+L1 : 2, M1 : m, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.00980121226356
+L1 : 0, M1 : n, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 1, M1 : n, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0484577738418
+L1 : 2, M1 : n, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0489563519456
+L1 : 0, M1 : o, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0411582588411
+L1 : 1, M1 : o, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.0
+L1 : 2, M1 : o, O1 : InaBayesNet, N1 : 1.34, Q1 : myNameHasMoreThanOneLetter = 0.044833791982
+"""
+

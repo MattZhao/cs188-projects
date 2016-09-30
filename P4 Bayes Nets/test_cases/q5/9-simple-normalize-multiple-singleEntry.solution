@@ -1,0 +1,19 @@
+# This is the solution file for test_cases/q5/9-simple-normalize-multiple-singleEntry.test.
+variableDomainsDict: """
+N : singleEntry
+M : singleEntry
+D : wet
+W : sun rain
+L : singleEntry
+"""
+
+unconditionedVariables: "W"
+
+conditionedVariables: "M D L N"
+
+FactorTable: """
+W : sun, N : singleEntry, M : singleEntry, D : wet, L : singleEntry = 0.363636363636
+W : rain, N : singleEntry, M : singleEntry, D : wet, L : singleEntry = 0.636363636364
+"""
+
+

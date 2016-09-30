@@ -1,0 +1,16 @@
+# This is the solution file for test_cases/q4/6-simple-eliminate-int.test.
+variableDomainsDict: """
+D : wet dry
+W : sun rain
+"""
+
+unconditionedVariables: "D"
+
+conditionedVariables: ""
+
+FactorTable: """
+D : wet = 2.0
+D : dry = 0.0
+"""
+
+

@@ -1,0 +1,16 @@
+# This is the solution file for test_cases/q5/8-simple-normalize-nonsingleton-var.test.
+variableDomainsDict: """
+D0 : wet
+W0 : sun rain
+"""
+
+unconditionedVariables: "W0"
+
+conditionedVariables: "D0"
+
+FactorTable: """
+W0 : sun, D0 : wet = 0.363636363636
+W0 : rain, D0 : wet = 0.636363636364
+"""
+
+

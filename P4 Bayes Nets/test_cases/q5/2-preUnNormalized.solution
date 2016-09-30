@@ -1,0 +1,16 @@
+# This is the solution file for test_cases/q5/2-preUnNormalized.test.
+variableDomainsDict: """
+W : sun storm rain
+"""
+
+unconditionedVariables: "W"
+
+conditionedVariables: ""
+
+FactorTable: """
+W : sun = 0.4
+W : storm = 0.2
+W : rain = 0.4
+"""
+
+

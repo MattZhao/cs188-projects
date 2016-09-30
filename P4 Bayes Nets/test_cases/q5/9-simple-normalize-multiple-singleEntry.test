@@ -1,0 +1,32 @@
+class: "FactorInputFactorEqualityTest"
+max_points: "4"
+alg: "normalize"
+factorArgs: "A"
+seed: "cs188"
+constructRandomly: "False"
+
+variableDomainsDict: """
+W : sun rain
+D : wet dry
+L : singleEntry
+M : singleEntry
+N : singleEntry
+"""
+
+evidenceDict: """
+D : wet
+"""
+
+# endOfNonFactors
+
+AunconditionedVariables: "W M L D N"
+
+AconditionedVariables: ""
+
+AFactorTable: """
+L : singleEntry, M : singleEntry, N : singleEntry, D : wet, W : sun = 0.08
+L : singleEntry, M : singleEntry, N : singleEntry, D : dry, W : sun = 0.72
+L : singleEntry, M : singleEntry, N : singleEntry, D : wet, W : rain = 0.14
+L : singleEntry, M : singleEntry, N : singleEntry, D : dry, W : rain = 0.06
+"""
+

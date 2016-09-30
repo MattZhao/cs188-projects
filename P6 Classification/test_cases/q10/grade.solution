@@ -1,0 +1,2 @@
+# This is the solution file for test_cases/q10/grade.test.
+init_param_values_fname: "weights/convnet_init.npz"

@@ -1,0 +1,19 @@
+# This is the solution file for test_cases/q4/2-simple-eliminate-extended.test.
+variableDomainsDict: """
+D : wet dry
+W : sun rain
+T : hot cold
+"""
+
+unconditionedVariables: "D W"
+
+conditionedVariables: ""
+
+FactorTable: """
+D : wet, W : sun = 0.08
+D : dry, W : sun = 0.72
+D : wet, W : rain = 0.14
+D : dry, W : rain = 0.06
+"""
+
+

@@ -1,0 +1,18 @@
+class: "GradeClassifierTest"
+solver_module: "solvers"
+solver_class: "MinibatchStochasticGradientDescentSolver"
+iterations: "1000"
+shuffle: "True"
+batch_size: "32"
+solver_hyperparams: "q10"
+
+model_module: "models"
+model_class: "ConvNetModel"
+init_param_values_fname_or_function: "weights/convnet_init.npz"
+
+dataset: "mnistDataset"
+
+accuracy_threshold: "97.0"
+
+max_points: "4"
+

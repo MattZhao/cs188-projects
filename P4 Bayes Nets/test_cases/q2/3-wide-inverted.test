@@ -1,0 +1,21 @@
+class: "BayesNetEqualityTest"
+
+layoutName: "wideInvertedBoard"
+layout: """
+%%%%%%%%%%%%%%%%%%%
+%                 %
+%             BRR %
+%             RGB %
+%             R B %
+%                 %
+%                 %
+%                 %
+%                 %
+%                 %
+% BBB             %
+% R.B             %
+% B B             %
+%P                %
+%%%%%%%%%%%%%%%%%%%
+"""
+

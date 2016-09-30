@@ -1,0 +1,2 @@
+# This is the solution file for test_cases/q5/learning_rate1-momentum0.0-update_iterations1.test.
+update_values_fname: "test_cases/q5/learning_rate1-momentum0.0-update_iterations1.npz"

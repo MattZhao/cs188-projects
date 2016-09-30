@@ -1,0 +1,17 @@
+class: "ParamValuesEqualityTest"
+
+solver_module: "solvers"
+solver_class: "StochasticGradientDescentSolver"
+learning_rate: "0.001"
+momentum: "0.9"
+iterations: "1"
+shuffle: "True"
+check_losses: "True"
+
+model_module: "models"
+model_class: "SoftmaxRegressionModel"
+
+dataset: "mnistDataset"
+
+max_points: "1"
+

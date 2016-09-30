@@ -1,0 +1,21 @@
+class: "GraphEqualityTest"
+
+layoutName: "longBottomBoard"
+layout: """
+%%%%%%%%%%%
+%         %
+%         %
+%         %
+%         %
+%         %
+%         %
+%         %
+%         %
+%         %
+% RBR BBR %
+% R.B BGB %
+% B B R R %
+%P        %
+%%%%%%%%%%%
+"""
+

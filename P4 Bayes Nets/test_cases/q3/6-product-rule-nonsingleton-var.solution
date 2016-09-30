@@ -1,0 +1,18 @@
+# This is the solution file for test_cases/q3/6-product-rule-nonsingleton-var.test.
+variableDomainsDict: """
+D0 : wet dry
+W0 : sun rain
+"""
+
+unconditionedVariables: "D0 W0"
+
+conditionedVariables: ""
+
+FactorTable: """
+D0 : wet, W0 : sun = 0.08
+D0 : dry, W0 : sun = 0.72
+D0 : wet, W0 : rain = 0.14
+D0 : dry, W0 : rain = 0.06
+"""
+
+

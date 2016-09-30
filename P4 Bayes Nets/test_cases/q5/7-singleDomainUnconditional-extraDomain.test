@@ -1,0 +1,30 @@
+class: "FactorInputFactorEqualityTest"
+max_points: "4"
+alg: "normalize"
+factorArgs: "A"
+seed: "cs188"
+constructRandomly: "False"
+
+
+variableDomainsDict: """
+A : 0 1 2
+B : m
+E : singleEntryForThisVariable
+"""
+
+evidenceDict: """
+B : m
+"""
+
+# endOfNonFactors
+
+AunconditionedVariables: "A"
+
+AconditionedVariables: "B"
+
+AFactorTable: """
+A : 0, B : m = 0.05
+A : 1, B : m = 0.15
+A : 2, B : m = 0.3
+"""
+

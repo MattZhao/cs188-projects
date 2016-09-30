@@ -1,0 +1,18 @@
+# This is the solution file for test_cases/q5/7-singleDomainUnconditional-extraDomain.test.
+variableDomainsDict: """
+A : 0 1 2
+B : m
+E : singleEntryForThisVariable
+"""
+
+unconditionedVariables: "A"
+
+conditionedVariables: "B"
+
+FactorTable: """
+A : 0, B : m = 0.1
+A : 1, B : m = 0.3
+A : 2, B : m = 0.6
+"""
+
+

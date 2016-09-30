@@ -1,0 +1,83 @@
+class: "BayesNetInputFactorEqualityTest"
+max_points: "4"
+alg: "inferenceByVariableElimination"
+seed: "cs188"
+constructRandomly: "False"
+
+variables: """
+W
+D
+T
+S
+"""
+
+edges: """
+W D
+T D
+D S
+"""
+
+variableDomainsDict: """
+W : sun rain
+D : dry wet
+T : hot cold
+S : slippery rough
+"""
+
+queryVariables: "W"
+
+variableEliminationOrder: "T D"
+
+evidenceDict: """
+S : slippery
+"""
+
+# endOfNonFactors
+
+SunconditionedVariables: "S"
+
+SconditionedVariables: "D"
+
+SFactorTable: """
+S : slippery, D : dry = 0.1
+S : rough, D : dry = 0.9
+S : slippery, D : wet = 0.5
+S : rough, D : wet = 0.5
+"""
+
+
+DunconditionedVariables: "D"
+
+DconditionedVariables: "T W"
+
+DFactorTable: """
+D : dry, T : hot, W : sun = 0.9
+D : wet, T : hot, W : sun = 0.1
+D : dry, T : cold, W : sun = 0.8
+D : wet, T : cold, W : sun = 0.2
+D : dry, T : hot, W : rain = 0.5
+D : wet, T : hot, W : rain = 0.5
+D : dry, T : cold, W : rain = 0.3
+D : wet, T : cold, W : rain = 0.7
+"""
+
+
+WunconditionedVariables: "W"
+
+WconditionedVariables: ""
+
+WFactorTable: """
+W : sun = 0.8
+W : rain = 0.2
+"""
+
+
+TunconditionedVariables: "T"
+
+TconditionedVariables: ""
+
+TFactorTable: """
+T : hot = 0.75
+T : cold = 0.25
+"""
+

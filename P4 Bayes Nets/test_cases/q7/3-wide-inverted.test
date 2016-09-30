@@ -1,0 +1,28 @@
+class: "MostLikelyFoodHousePositionTest"
+
+layoutName: "wideInvertedBoard"
+layout: """
+%%%%%%%%%%%%%%%%%%%
+%                 %
+%             BRR %
+%             RGB %
+%             R B %
+%                 %
+%                 %
+%                 %
+%                 %
+%                 %
+% BBB             %
+% R.B             %
+% B B             %
+%P                %
+%%%%%%%%%%%%%%%%%%%
+"""
+
+evidence: """
+{'obs(2,11)': 'none', 'obs(2,10)': 'none', 'obs(4,10)': 'none', 'obs(3,12)': 'none', 'obs(4,11)': 'none', 'obs(2,2)': 'blue', 'obs(2,3)': 'red', 'obs(2,4)': 'blue'}
+"""
+
+eliminationOrder: """
+['obs(4,4)', 'obs(4,3)', 'obs(4,2)', 'obs(3,4)', 'obs(4,12)', 'obs(2,12)', 'obs(16,4)', 'obs(14,4)', 'obs(16,3)', 'obs(16,2)', 'obs(14,3)', 'obs(15,4)', 'obs(14,2)', 'obs(14,11)', 'obs(15,12)', 'obs(16,11)', 'obs(14,10)', 'obs(16,10)', 'obs(14,12)', 'obs(16,12)', 'xPos', 'yPos', 'ghostHouse']
+"""

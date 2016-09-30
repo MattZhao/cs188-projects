@@ -1,0 +1,27 @@
+class: "VPITest"
+
+function: "computeExploreValue"
+
+layoutName: "vpiBoard"
+layout: """
+%%%%%%%%%%%
+%         %
+% RBR BRR %
+% BGR B.R %
+% R B B B %
+%    P    %
+%         %
+%         %
+%         %
+%         %
+%%%%%%%%%%%
+"""
+
+evidence: """
+{'obs(8,2)': 'none', 'obs(8,3)': 'none', 'obs(2,6)': 'red', 'obs(6,3)': 'none', 'obs(4,3)': 'none', 'obs(6,2)': 'none', 'obs(4,2)': 'none', 'obs(2,8)': 'red', 'obs(7,4)': 'none', 'obs(2,2)': 'none', 'obs(6,4)': 'none', 'obs(3,8)': 'blue', 'obs(4,8)': 'red', 'obs(3,4)': 'none', 'obs(4,6)': 'blue', 'obs(2,3)': 'none', 'obs(2,7)': 'blue', 'obs(4,7)': 'red', 'obs(8,4)': 'none', 'obs(2,4)': 'none', 'obs(4,4)': 'none'}
+"""
+
+eliminationOrder: """
+['xPos', 'yPos']
+"""
+

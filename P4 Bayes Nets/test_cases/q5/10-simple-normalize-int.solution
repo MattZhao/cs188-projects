@@ -1,0 +1,16 @@
+# This is the solution file for test_cases/q5/10-simple-normalize-int.test.
+variableDomainsDict: """
+D : wet
+W : sun rain
+"""
+
+unconditionedVariables: "W"
+
+conditionedVariables: "D"
+
+FactorTable: """
+W : sun, D : wet = 0.5
+W : rain, D : wet = 0.5
+"""
+
+

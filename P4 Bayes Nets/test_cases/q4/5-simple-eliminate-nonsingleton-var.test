@@ -1,0 +1,26 @@
+class: "FactorInputFactorEqualityTest"
+max_points: "4"
+alg: "eliminate"
+factorArgs: "A"
+eliminateVariable: "W0"
+seed: "cs188"
+constructRandomly: "False"
+
+variableDomainsDict: """
+W0 : sun rain
+D0 : wet dry
+"""
+
+# endOfNonFactors
+
+AunconditionedVariables: "D0 W0"
+
+AconditionedVariables: ""
+
+AFactorTable: """
+D0 : wet, W0 : sun = 0.08
+D0 : dry, W0 : sun = 0.72
+D0 : wet, W0 : rain = 0.14
+D0 : dry, W0 : rain = 0.06
+"""
+

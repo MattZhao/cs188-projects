@@ -1,0 +1,15 @@
+class: "UpdatesEqualityTest"
+solver_module: "solvers"
+solver_class: "GradientDescentSolver"
+learning_rate: "1.0"
+momentum: "0.9"
+
+model_module: "models"
+model_class: "LinearRegressionModel"
+init_param_values_fname_or_function: "tinyLinearRegressionModelInitParamValues"
+
+dataset: "tinyDataset"
+
+max_points: "1"
+
+

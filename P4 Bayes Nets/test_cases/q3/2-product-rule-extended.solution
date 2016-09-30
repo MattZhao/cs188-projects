@@ -1,0 +1,23 @@
+# This is the solution file for test_cases/q3/2-product-rule-extended.test.
+variableDomainsDict: """
+D : wet dry
+W : sun rain
+T : cold hot
+"""
+
+unconditionedVariables: "D W T"
+
+conditionedVariables: ""
+
+FactorTable: """
+D : wet, W : sun, T : cold = 0.02
+D : dry, W : sun, T : cold = 0.18
+D : wet, W : rain, T : cold = 0.126
+D : dry, W : rain, T : cold = 0.054
+D : wet, W : sun, T : hot = 0.06
+D : dry, W : sun, T : hot = 0.54
+D : wet, W : rain, T : hot = 0.014
+D : dry, W : rain, T : hot = 0.006
+"""
+
+

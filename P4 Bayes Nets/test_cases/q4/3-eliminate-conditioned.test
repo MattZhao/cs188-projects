@@ -1,0 +1,48 @@
+class: "FactorInputFactorEqualityTest"
+max_points: "4"
+alg: "eliminate"
+factorArgs: "A"
+eliminateVariable: "B"
+seed: "cs188"
+constructRandomly: "False"
+
+variableDomainsDict: """
+W : sun rain
+D : wet dry
+T : hot cold
+B : wind breeze still
+"""
+
+# endOfNonFactors
+
+AunconditionedVariables: "B T W"
+
+AconditionedVariables: "D"
+
+AFactorTable: """
+B : wind, W : sun, T : hot, D : wet = 0.258330124403
+B : breeze, W : sun, T : hot, D : wet = 0.172735794206
+B : still, W : sun, T : hot, D : wet = 0.0
+B : wind, W : rain, T : hot, D : wet = 0.0377614688681
+B : breeze, W : rain, T : hot, D : wet = 0.0638957615356
+B : still, W : rain, T : hot, D : wet = 0.191710903684
+B : wind, W : sun, T : cold, D : wet = 0.104734692091
+B : breeze, W : sun, T : cold, D : wet = 0.0125717596017
+B : still, W : sun, T : cold, D : wet = 0.0391473894072
+B : wind, W : rain, T : cold, D : wet = 0.0
+B : breeze, W : rain, T : cold, D : wet = 0.0667905852913
+B : still, W : rain, T : cold, D : wet = 0.0523215209113
+B : wind, W : sun, T : hot, D : dry = 0.159661284861
+B : breeze, W : sun, T : hot, D : dry = 0.110637840267
+B : still, W : sun, T : hot, D : dry = 0.062692626321
+B : wind, W : rain, T : hot, D : dry = 0.062484977125
+B : breeze, W : rain, T : hot, D : dry = 0.144114059443
+B : still, W : rain, T : hot, D : dry = 0.130648517392
+B : wind, W : sun, T : cold, D : dry = 0.0
+B : breeze, W : sun, T : cold, D : dry = 0.0355009323002
+B : still, W : sun, T : cold, D : dry = 0.0
+B : wind, W : rain, T : cold, D : dry = 0.048394873988
+B : breeze, W : rain, T : cold, D : dry = 0.131361951232
+B : still, W : rain, T : cold, D : dry = 0.11450293707
+"""
+
